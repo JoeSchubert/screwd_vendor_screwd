@@ -44,6 +44,11 @@ PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # HOSTS file
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/hosts:system/etc/hosts
