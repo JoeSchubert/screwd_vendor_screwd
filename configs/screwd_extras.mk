@@ -33,15 +33,18 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+
 # Extra packages
 PRODUCT_PACKAGES += \
     BluetoothExt
+
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat
+
 # Chromium Prebuilt
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 -include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk

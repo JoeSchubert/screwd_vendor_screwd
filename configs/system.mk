@@ -49,5 +49,20 @@ PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 
+# DU's init.d tweaks
+PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+        vendor/screwd/prebuilt/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+        vendor/screwd/prebuilt/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+        vendor/screwd/prebuilt/etc/init.d/05freemem:system/etc/init.d/05freemem \
+        vendor/screwd/prebuilt/etc/init.d/06removecache:system/etc/init.d/06removecache \
+        vendor/screwd/prebuilt/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+        vendor/screwd/prebuilt/etc/init.d/09cron:system/etc/init.d/09cron \
+        vendor/screwd/prebuilt/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+        vendor/screwd/prebuilt/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+        vendor/screwd/prebuilt/etc/helpers.sh:system/etc/helpers.sh \
+        vendor/screwd/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
+        vendor/screwd/prebuilt/etc/init.d.cfg:system/etc/init.d.cfg
+
 # PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
