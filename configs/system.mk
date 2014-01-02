@@ -32,6 +32,11 @@ PRODUCT_COPY_FILES += \
 # APN
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+    
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/screwd/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+	vendor/screwd/prebuilt/etc/hosts.og:system/etc/hosts.og    
 
 # Gapps backup script
 # PRODUCT_COPY_FILES += \
