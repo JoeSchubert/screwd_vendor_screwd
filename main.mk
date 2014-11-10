@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 The Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +15,13 @@
 
 
 
-include vendor/pa/vendor.mk
-include vendor/pa/configs/aosp_fixes.mk
-include vendor/pa/configs/system.mk
-include vendor/pa/configs/pa_extras.mk
-include vendor/pa/configs/pa_overrides.mk
-include vendor/pa/configs/bootanimation.mk
-include vendor/pa/configs/version.mk
-include vendor/pa/configs/themes_common.mk
+include vendor/screwd/vendor.mk
+include vendor/screwd/configs/aosp_fixes.mk
+include vendor/screwd/configs/system.mk
+include vendor/screwd/configs/screwd_extras.mk
+include vendor/screwd/configs/screwd_overrides.mk
+include vendor/screwd/configs/bootanimation.mk
+include vendor/screwd/configs/version.mk
+#include vendor/screwd/configs/themes_common.mk
 
 

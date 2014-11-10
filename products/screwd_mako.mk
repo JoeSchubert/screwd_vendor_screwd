@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,25 +14,26 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_deb,$(TARGET_PRODUCT))
+
+ifeq (screwd_mako,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_deb
+OVERLAY_TARGET := screwd_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+# Include Screw'd common configuration
+include vendor/screwd/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/asus/deb/full_deb.mk)
+$(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_deb
+PRODUCT_NAME := screwd_mako
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 7
-PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razorg BUILD_FINGERPRINT="google/razorg/deb:4.4.3/KTU84L/1148727:user/release-keys" PRIVATE_BUILD_DESC="razorg-user 4.4.3 KTU84L 1148727 release-keys"
+PRODUCT_MODEL := Nexus 4
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.4.4 KTU84P 1227136 release-keys"
 
 endif

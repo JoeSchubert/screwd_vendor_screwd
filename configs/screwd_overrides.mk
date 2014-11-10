@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,26 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PACKAGES += \
-    Busybox \
-    Lightbulb
-
-# Source or prebuilt PA-prefs logic
-#ifneq ($(PREFS_FROM_SOURCE),true)
-#    PRODUCT_COPY_FILES += \
-#        vendor/pa/prebuilt/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
-#else
-#    # Build paprefs from sources
-#    PRODUCT_PACKAGES += \
-#        ParanoidPreferences
-#endif
-
-# Include ParanoidOTA
-ifneq ($(NO_OTA_BUILD),true)
-    PRODUCT_PACKAGES += \
-        ParanoidOTA
-endif
 
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.pa.device=$(DEVICE)
+    ro.screwd.device=$(DEVICE)

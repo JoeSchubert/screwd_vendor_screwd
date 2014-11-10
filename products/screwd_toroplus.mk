@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,25 +15,25 @@
 
 # Check for target product
 
-ifeq (pa_hammerhead,$(TARGET_PRODUCT))
+ifeq (screwd_toroplus,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := screwd_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+# Include Screw'd common configuration
+include vendor/screwd/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
+$(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_hammerhead
+PRODUCT_NAME := screwd_toroplus
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 5
-PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hammerhead BUILD_FINGERPRINT="google/hammerhead/hammerhead:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="hammerhead-user 4.4.4 KTU84P 1227136 release-keys"
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="google/mysidspr/toroplus:4.4.2/KOT49H/737497:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.4.2 KOT49H 737497 release-keys"
 
 endif

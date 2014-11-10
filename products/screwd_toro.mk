@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,25 +14,26 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_flo,$(TARGET_PRODUCT))
+
+ifeq (screwd_toro,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_flo
+OVERLAY_TARGET := screwd_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+# Include Screw'd common configuration
+include vendor/screwd/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/asus/flo/full_flo.mk)
+$(call inherit-product, device/samsung/toro/full_toro.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_flo
+PRODUCT_NAME := screwd_toro
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 7
-PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT="google/razor/flo:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="razor-user 4.4.4 KTU84P 1227136 release-keys"
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.4.2/KOT49H/737497:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.4.2 KOT49H 737497 release-keys"
 
 endif

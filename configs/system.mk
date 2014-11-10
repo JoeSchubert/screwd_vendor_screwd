@@ -1,4 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,11 +40,11 @@ PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # SU Support
-SUPERUSER_EMBEDDED := true
+#SUPERUSER_EMBEDDED := true
 
-PRODUCT_PACKAGES := \
-    Superuser \
-    su
+#PRODUCT_PACKAGES := \
+#    Superuser \
+#    su
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3

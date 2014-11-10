@@ -1,4 +1,5 @@
-# Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2012 ParanoidAndroid Project
+# Copyright (C) 2014 Screw'd Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,25 +14,25 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_manta,$(TARGET_PRODUCT))
+ifeq (screwd_grouper,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_manta
+OVERLAY_TARGET := screwd_tvdpi
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE ?= true
+PREFS_FROM_SOURCE ?= false
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+# Include Screw'd common configuration
+include vendor/screwd/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/samsung/manta/full_manta.mk)
+$(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_manta
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 10
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mantaray BUILD_FINGERPRINT="google/mantaray/manta:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="mantaray-user 4.4.4 KTU84P 1227136 release-keys"
-
+PRODUCT_NAME := screwd_grouper
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Nexus 7
+PRODUCT_MANUFACTURER := Asus
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.4.4/KTU84P/1227136:user/release-keys"
+PRIVATE_BUILD_DESC="nakasi-user 4.4.4 KTU84P 1227136 release-keys"
 endif
