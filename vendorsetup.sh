@@ -3,7 +3,6 @@ add_lunch_combo screwd_grouper-userdebug
 add_lunch_combo screwd_flo-userdebug
 add_lunch_combo screwd_hammerhead-userdebug
 add_lunch_combo screwd_tilapia-userdebug
-add_lunch_combo screwd_mako-userdebug
 add_lunch_combo screwd_manta-userdebug
 add_lunch_combo screwd_maguro-userdebug
 add_lunch_combo screwd_toro-userdebug
