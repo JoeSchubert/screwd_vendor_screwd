@@ -12,7 +12,37 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=android-google
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+endif
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
+
+# Disable multithreaded dexopt by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dalvik.multithread=false
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+# Enable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+endif
+# Extra packages
+PRODUCT_PACKAGES += \
+    BluetoothExt
+# Extra tools
+PRODUCT_PACKAGES += \
+    e2fsck \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
 # Chromium Prebuilt
-#ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
-#-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-#endif
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
