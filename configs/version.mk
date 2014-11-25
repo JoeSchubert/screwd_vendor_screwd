@@ -4,7 +4,7 @@ else
         VERSION := $(ROM_VERSION_MAJOR).$(ROM_VERSION_MINOR)$(ROM_VERSION_MAINTENANCE)
 endif
 
-export ROM_VERSION := $(VERSION)-$(shell date -u +%Y%m%d)
+export ROM_VERSION := $(VERSION)-$(shell date +"%Y%m%d-%H%M")
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(ROM_VERSION) \
