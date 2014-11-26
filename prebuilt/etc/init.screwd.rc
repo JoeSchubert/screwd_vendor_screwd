@@ -1,6 +1,4 @@
-# Screw'd Extras
-# Superuser
-import /init.superuser.rc
+# Screw'd Extra
 
 on init
     export ANDROID_CACHE /cache
