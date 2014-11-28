@@ -46,16 +46,8 @@ PRODUCT_COPY_FILES += \
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/bin/su:system/xbin/daemonsu \
-    vendor/screwd/prebuilt/bin/su:system/xbin/su \
-    vendor/screwd/prebuilt/bin/su:system/bin/.ext/.su \
-    vendor/screwd/prebuilt/bin/su:system/xbin/sugote \
-    vendor/screwd/prebuilt/bin/supolicy:system/xbin/supolicy \
-    vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/screwd/prebuilt/etc/install-recovery.sh:system/etc/install-recovery.sh \
-    vendor/screwd/prebuilt/lib/libsupol.so:system/lib/libsupol.so \
-    vendor/screwd/prebuilt/apk/Superuser.apk:system/app/SuperSU/SuperSU.apk
-
+    vendor/screwd/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 
 # PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
