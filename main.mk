@@ -22,6 +22,7 @@ include vendor/screwd/configs/screwd_extras.mk
 include vendor/screwd/configs/screwd_overrides.mk
 include vendor/screwd/configs/bootanimation.mk
 include vendor/screwd/configs/version.mk
+include vendor/screwd/sepolicy/sepolicy.mk
 #include vendor/screwd/configs/themes_common.mk
 
 
