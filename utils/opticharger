@@ -125,12 +125,12 @@ then
         fi
         if [ "$CERT" = "PRESIGNED" ];
         then
-            echo -e ${cya}"$NAME is presigned, skipping"${CL_RST}
+            echo -e ${CL_CYN}"$NAME is presigned, skipping"${CL_RST}
             exit 1;
         fi
     fi
 
-    [ $QUIET ] || echo -e ${bldylw}"Certificate:${CL_RST} $CERT";
+    [ $QUIET ] || echo -e ${CL_YLW}"Certificate:${CL_RST} $CERT";
 
     [ -d $TMPDIR/$NAME ] && rm -rf $TMPDIR/$NAME
     mkdir -p $TMPDIR/$NAME
