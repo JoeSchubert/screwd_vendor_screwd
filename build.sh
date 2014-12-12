@@ -95,6 +95,9 @@ echo -e "${cya}Building ${bldcya}SCREWD $VERSION for $DEVICE ${txtrst}";
 
   #Use Prebuilt Chromium
   export USE_PREBUILT_CHROMIUM=1
+  
+  #Generate changelog
+  export CHANGELOG=true
 
   # Fetch latest sources
   if [ "$SYNC" == "true" ]; then
