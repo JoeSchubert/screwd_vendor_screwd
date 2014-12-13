@@ -24,7 +24,7 @@ ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 endif
 ifneq ($(filter screwd_deb screwd_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1200.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
 ifeq (screwd_manta,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
