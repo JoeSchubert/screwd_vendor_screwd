@@ -55,9 +55,9 @@ MAINTENANCE=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MAINTENANCE :
 TAG=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
 
   if [ -n "$TAG" ]; then
-          VERSION=$MAJOR.$MINOR$MAINTENANCE-$TAG
+          VERSION=$MAJOR.$MINOR.$MAINTENANCE-$TAG
   else
-          VERSION=$MAJOR.$MINOR$MAINTENANCE
+          VERSION=$MAJOR.$MINOR.$MAINTENANCE
   fi
 
   # If there is no extra parameter, reduce parameters index by 1
