@@ -188,4 +188,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.buildtype=$(SCREWD_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/screwd/tools/screwd_process_props.py
+FINISHER_SCRIPT := vendor/screwd/tools/finisher
 
