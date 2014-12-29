@@ -19,28 +19,7 @@ endif
 ifeq (screwd_flo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_flo.mk
 endif
-ifeq (screwd_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_grouper.mk
-endif
 ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_hammerhead.mk
-endif
-ifeq (screwd_maguro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_maguro.mk
-endif
-ifeq (screwd_mako,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_mako.mk
-endif
-ifeq (screwd_manta,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_manta.mk
-endif
-ifeq (screwd_tilapia,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_tilapia.mk
-endif
-ifeq (screwd_toro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_toro.mk
-endif
-ifeq (screwd_toroplus,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_toroplus.mk
 endif
 
