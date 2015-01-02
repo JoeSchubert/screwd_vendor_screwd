@@ -1,9 +1,3 @@
 add_lunch_combo screwd_deb-userdebug
-add_lunch_combo screwd_grouper-userdebug
 add_lunch_combo screwd_flo-userdebug
 add_lunch_combo screwd_hammerhead-userdebug
-add_lunch_combo screwd_tilapia-userdebug
-add_lunch_combo screwd_manta-userdebug
-add_lunch_combo screwd_maguro-userdebug
-add_lunch_combo screwd_toro-userdebug
-add_lunch_combo screwd_toroplus-userdebug
