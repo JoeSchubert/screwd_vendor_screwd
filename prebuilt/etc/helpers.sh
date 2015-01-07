@@ -394,11 +394,7 @@ set_prop() {
 			sysrw
 			busybox sed -i "s|${prop_key}${seperator}.*|${prop_key}${seperator}${prop_value}|g" $prop_file
 			exit_status=$?
-			
-			if ! mountsysrw
-			then
-				 sysro
-			fi
+			sysro
 		fi
 	fi
 
@@ -483,11 +479,7 @@ zipalign_apks() {
 		zipalign_apk $apk
 	done
 
-	if ! mountsysrw
-	then
-	    sysro
-	fi
-	
+	sysro
 	sync
 
 	stoptime=` busybox date +%s `
@@ -608,10 +600,7 @@ fix_permissions() {
 		set_package_permission $packagename $apk_path	
 	done
 
-	if ! mountsysrw
-	then
-	    sysro
-	fi
+	sysro
 	sync
 
 	stoptime=` busybox date +%s `

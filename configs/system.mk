@@ -59,7 +59,6 @@ PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
         vendor/screwd/prebuilt/etc/init.d/09cron:system/etc/init.d/09cron \
         vendor/screwd/prebuilt/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-	vendor/screwd/prebuilt/etc/init.d/26mountsysrw:system/etc/init.d/26mountsysrw \
         vendor/screwd/prebuilt/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
         vendor/screwd/prebuilt/etc/helpers.sh:system/etc/helpers.sh \
         vendor/screwd/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
