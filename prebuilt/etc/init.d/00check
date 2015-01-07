@@ -75,5 +75,8 @@ empty_app_mem=8192
 read_ahead_kb=2048
 
 EOF
-	sysro
+	if ! mountsysrw
+	then
+	    sysro
+	fi
 fi
