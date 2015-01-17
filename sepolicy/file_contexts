@@ -4,6 +4,9 @@
 /system/bin/auditd        u:object_r:logd_exec:s0
 /data/misc/audit(/.*)?    u:object_r:auditd_log:s0
 
+# Themes
+/data/system/theme(/.*)?  u:object_r:theme_data_file:s0
+
 /system/bin/sysinit       u:object_r:sysinit_exec:s0
 
 #############################
@@ -14,3 +17,5 @@
 
 /data/hostapd(/.*)?         u:object_r:wifi_data_file:s0
 /data/misc/radio(/.*)?      u:object_r:radio_data_file:s0
+# Lockscreen wallpaper
+/data/system/users/[0-9]+/keyguard_wallpaper   u:object_r:wallpaper_file:s0
