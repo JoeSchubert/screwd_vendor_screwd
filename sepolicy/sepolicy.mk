@@ -7,6 +7,7 @@ BOARD_SEPOLICY_DIRS += \
     vendor/screwd/sepolicy
 
 BOARD_SEPOLICY_UNION += \
+    drmserver.te \
     file.te \
     file_contexts \
     genfs_contexts \
