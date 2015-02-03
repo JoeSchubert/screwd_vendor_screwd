@@ -16,12 +16,6 @@
 # Check for target product
 ifeq (screwd_flo,$(TARGET_PRODUCT))
 
-# OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := screwd_flo
-
-# Build paprefs from sources
-PREFS_FROM_SOURCE ?= true
-
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
@@ -33,6 +27,6 @@ PRODUCT_NAME := screwd_flo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT="google/razor/flo:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="razor-user 4.4.4 KTU84P 1227136 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/flo:5.0.2/LRX22G/1649326:user/release-keys PRIVATE_BUILD_DESC="razor-user 5.0.2 LRX22G 1649326 release-keys"
 
 endif

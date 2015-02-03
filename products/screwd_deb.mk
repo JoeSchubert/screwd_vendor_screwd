@@ -16,12 +16,6 @@
 # Check for target product
 ifeq (screwd_deb,$(TARGET_PRODUCT))
 
-# OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := screwd_deb
-
-# Build paprefs from sources
-PREFS_FROM_SOURCE ?= true
-
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
