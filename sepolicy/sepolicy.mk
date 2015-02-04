@@ -16,6 +16,7 @@ BOARD_SEPOLICY_UNION += \
     service_contexts \
     app.te \
     auditd.te \
+    mediaserver.te \
     bootanim.te \
     healthd.te \
     hostapd.te \
