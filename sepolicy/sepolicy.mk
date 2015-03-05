@@ -27,6 +27,7 @@ BOARD_SEPOLICY_UNION += \
     shell.te \
     sysinit.te \
     system.te \
+    system_app.te \
     ueventd.te \
     vold.te \
     zygote.te \
