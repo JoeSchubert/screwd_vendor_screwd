@@ -37,8 +37,8 @@ endif
 # Extra packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    LockClock 
-    
+    LockClock \
+    OpenDelta    
 
 # Extra tools
 PRODUCT_PACKAGES += \
