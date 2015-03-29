@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Override old AOSP defaults, we use (new) Google stock sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Titania.ogg \
+    ro.config.ringtone=Lollipop.ogg \
     ro.config.notification_sound=Tethys.ogg \
     ro.config.alarm_alert=Osmium.ogg
 
