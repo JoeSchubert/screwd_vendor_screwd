@@ -47,9 +47,9 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-# Kernel Auditor
+# Kernel Adiutor
 PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/common/etc/Auditor.apk:system/app/Auditor/Auditor.apk
+    vendor/screwd/prebuilt/common/etc/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
     
 # Chromium Prebuilt
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
