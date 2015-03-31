@@ -39,7 +39,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LockClock \
     OmniSwitch \
-    OpenDelta    
+    OpenDelta \
+    Viper4Android   
 
 # Extra tools
 PRODUCT_PACKAGES += \
