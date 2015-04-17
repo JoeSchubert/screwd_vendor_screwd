@@ -38,6 +38,7 @@ endif
 PRODUCT_PACKAGES += \
     BluetoothExt \
     LockClock \
+    OmniSwitch \
     OpenDelta    
 
 # Extra tools
