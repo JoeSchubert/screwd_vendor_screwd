@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     OpenDelta \
+    KernelAdiutor \
     Viper4Android   
 
 # Extra tools
@@ -48,10 +49,6 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat
-
-# Kernel Adiutor
-PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/common/etc/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
     
 # Chromium Prebuilt
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
