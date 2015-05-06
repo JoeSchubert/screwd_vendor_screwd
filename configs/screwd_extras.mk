@@ -39,7 +39,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LockClock \
     OmniSwitch \
-    OpenDelta \
     KernelAdiutor \
     Viper4Android   
 
