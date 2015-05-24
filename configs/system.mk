@@ -44,5 +44,9 @@ PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 
+# HOSTS file
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/etc/hosts:system/etc/hosts
+    
 # PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
