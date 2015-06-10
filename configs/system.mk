@@ -39,10 +39,10 @@ PRODUCT_COPY_FILES += \
 	vendor/screwd/prebuilt/etc/hosts.og:system/etc/hosts.og    
 
 # Gapps backup script
-# PRODUCT_COPY_FILES += \
-#    vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-#    vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-#    vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+ PRODUCT_COPY_FILES += \
+    vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # SuperSU
 PRODUCT_COPY_FILES += \
