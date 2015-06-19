@@ -13,13 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-# Set default Ringtone & notification 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=BentlyDubs.ogg \
-    ro.config.notification_sound=Procyon.ogg \
-    ro.config.alarm_alert=Scandium.ogg
-
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.device=$(DEVICE)

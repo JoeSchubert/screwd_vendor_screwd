@@ -29,6 +29,6 @@ QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
 # Optimize PNG resources in APKs
-( cd $OUT/system; find framework/ app/ priv-app/ vendor/app/ -name \*.apk -print | $XARGS $OPTICHARGER; )
+( cd $OUT/system; find framework/ app/ priv-app/ -name \*.apk -print | $XARGS $OPTICHARGER; )
 
 exit 0
