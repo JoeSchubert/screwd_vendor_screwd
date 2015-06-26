@@ -39,8 +39,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LockClock \
     OmniSwitch \
-    KernelAdiutor \
-    Viper4Android   
+    KernelAdiutor
 
 # Extra tools
 PRODUCT_PACKAGES += \
