@@ -1,3 +1,4 @@
 add_lunch_combo screwd_deb-userdebug
 add_lunch_combo screwd_flo-userdebug
 add_lunch_combo screwd_hammerhead-userdebug
+add_lunch_combo screwd_tf300t-userdebug

@@ -1,5 +1,4 @@
-# Copyright (C) 2013 ParanoidAndroid Project
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (screwd_deb,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_deb.mk
-endif
-ifeq (screwd_flo,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_flo.mk
-endif
-ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_hammerhead.mk
-endif
+# Check for target product
 ifeq (screwd_tf300t,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_tf300t.mk
-endif
 
+# Include Screw'd common configuration
+include vendor/screwd/main.mk
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/asus/tf300t/device_tf300t.mk)
+
+# Configure as xhdpi device to prevent breaking without mdpi drawables
+PRODUCT_AAPT_CONFIG := normal mdpi hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
+
+# Override AOSP build properties
+PRODUCT_NAME := screwd_tf300t
+PRODUCT_DEVICE := tf300t
+PRODUCT_BRAND := Asus
+PRODUCT_MODEL := TF300T
+endif
