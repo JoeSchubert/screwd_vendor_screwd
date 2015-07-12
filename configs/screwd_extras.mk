@@ -48,11 +48,6 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-endif
-
 # V4A files
 PRODUCT_COPY_FILES += \
     vendor/screwd/proprietary/V4A/etc/audio_effects.conf:system/etc/audio_effects.conf \
