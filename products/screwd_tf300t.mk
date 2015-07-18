@@ -18,8 +18,8 @@ ifeq (screwd_tf300t,$(TARGET_PRODUCT))
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, device/asus/tf300t/device_tf300t.mk)
+# Inherit AOSP device configuration
+$(call inherit-product, device/asus/tf300t/full_tf300t.mk)
 
 # Configure as xhdpi device to prevent breaking without mdpi drawables
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi xhdpi
