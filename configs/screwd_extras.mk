@@ -39,7 +39,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LockClock \
     OmniSwitch \
-    KernelAdiutor
+    KernelAdiutor \
+    WallpaperPicker
 
 # Extra tools
 PRODUCT_PACKAGES += \
