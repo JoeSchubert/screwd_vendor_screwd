@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     KernelAdiutor \
-    WallpaperPicker
+    WallpaperPicker \
+    SlimLauncher
 
 # Extra tools
 PRODUCT_PACKAGES += \
