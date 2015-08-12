@@ -43,6 +43,18 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     SlimLauncher
 
+ifeq (OFFICIAL,$(ROM_VERSION_TAG))
+PRODUCT_PACKAGES += \
+    OTAUpdates
+endif
+
+ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.ota.romname=ScrewdAOSP \
+	ro.ota.version=$(shell date +"%Y%m%d") \
+	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/hammerhead/ota.xml
+endif
+
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
