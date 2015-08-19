@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     KernelAdiutor \
-    WallpaperPicker \
     SlimLauncher
 
 ifeq (OFFICIAL,$(ROM_VERSION_TAG))
