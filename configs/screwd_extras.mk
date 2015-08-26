@@ -44,19 +44,19 @@ PRODUCT_PACKAGES += \
 
 ifeq (OFFICIAL,$(ROM_VERSION_TAG))
 PRODUCT_PACKAGES += \
-    OTAUpdates
+    ScrewdOTA
 endif
 
 ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.ota.romname=ScrewdAOSP \
+        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
 	ro.ota.version=$(shell date +"%Y%m%d") \
 	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/hammerhead/ota.xml
 endif
 
 ifeq (screwd_flo,$(TARGET_PRODUCT))
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.ota.romname=ScrewdAOSP \
+        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
 	ro.ota.version=$(shell date +"%Y%m%d") \
 	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/flo/ota.xml
 endif
