@@ -69,9 +69,6 @@ SUPERUSER_EMBEDDED := true
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
-    SpareParts \
-    Superuser \
-    su
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -90,13 +87,11 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    screwdCenter \
-    screwdLauncher \
     LatinIME \
     BluetoothExt \
     DashClock
 
-#    screwdFileManager removed until updated
+#    SCREWDFileManager removed until updated
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -163,27 +158,17 @@ endif
 endif
 
 # Versioning System
-# screwdLP first version.
-PRODUCT_VERSION_MAJOR = 5.1.1
-PRODUCT_VERSION_MINOR = beta
-PRODUCT_VERSION_MAINTENANCE = 0.8
-ifdef screwd_BUILD_EXTRA
-    screwd_POSTFIX := -$(screwd_BUILD_EXTRA)
+# Screw'd M first version.
+PRODUCT_VERSION_MAJOR = 2.0.0
+PRODUCT_VERSION_MINOR = ALPHA
+PRODUCT_VERSION_MAINTENANCE = 0.1
+ifdef SCREWD_BUILD_EXTRA
+    SCREWD_POSTFIX := -$(SCREWD_BUILD_EXTRA)
 endif
-ifndef screwd_BUILD_TYPE
-    screwd_BUILD_TYPE := UNOFFICIAL
+ifndef SCREWD_BUILD_TYPE
+    SCREWD_BUILD_TYPE := UNOFFICIAL
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
-    screwd_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
-endif
-
-# screwdIRC
-# export INCLUDE_screwdIRC=1 for unofficial builds
-ifneq ($(filter WEEKLY OFFICIAL,$(screwd_BUILD_TYPE)),)
-    INCLUDE_screwdIRC = 1
-endif
-
-ifneq ($(INCLUDE_screwdIRC),)
-    PRODUCT_PACKAGES += screwdIRC
+    SCREWD_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
 # Chromium Prebuilt
@@ -192,15 +177,15 @@ ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 endif
 
 # Set all versions
-screwd_VERSION := screwd-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(screwd_BUILD_TYPE)$(screwd_POSTFIX)
-screwd_MOD_VERSION := screwd-$(screwd_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(screwd_BUILD_TYPE)$(screwd_POSTFIX)
+SCREWD_VERSION := screwd-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(SCREWD_BUILD_TYPE)$(SCREWD_POSTFIX)
+SCREWD_MOD_VERSION := screwd-$(SCREWD_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(SCREWD_BUILD_TYPE)$(SCREWD_POSTFIX)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     screwd.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
-    ro.screwd.version=$(screwd_VERSION) \
-    ro.modversion=$(screwd_MOD_VERSION) \
-    ro.screwd.buildtype=$(screwd_BUILD_TYPE)
+    ro.screwd.version=$(SCREWD_VERSION) \
+    ro.modversion=$(SCREWDd_MOD_VERSION) \
+    ro.screwd.buildtype=$(SCREWD_BUILD_TYPE)
 
 EXTENDED_POST_PROCESS_PROPS := vendor/screwd/tools/screwd_process_props.py
 
