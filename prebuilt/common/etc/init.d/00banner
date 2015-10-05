@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+L="log -p i -t screwd"
+
+$L "Welcome to Android `getprop ro.build.version.release` / Screw'd AOSP `getprop ro.screwd.version`";

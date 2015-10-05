@@ -1,2 +1,2 @@
 BOARD_SEPOLICY_DIRS += \
-    vendor/screwd/sepolicy/qcom
+    vendor/cm/sepolicy/qcom
