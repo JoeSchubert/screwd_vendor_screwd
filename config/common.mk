@@ -189,4 +189,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 EXTENDED_POST_PROCESS_PROPS := vendor/screwd/tools/screwd_process_props.py
 FINISHER_SCRIPT := vendor/screwd/tools/finisher
+CHANGELOG_SCRIPT := vendor/screwd/tools/changelog.sh
 
