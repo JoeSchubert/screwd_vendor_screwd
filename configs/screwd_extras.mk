@@ -13,53 +13,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-google
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-# Disable multithreaded dexopt by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.dalvik.multithread=false
-# Thank you, please drive thru!
-PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
+#ifeq (OFFICIAL,$(ROM_VERSION_TAG))
+#PRODUCT_PACKAGES += \
+#    ScrewdOTA
+#endif
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-# Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-endif
-# Extra packages
-PRODUCT_PACKAGES += \
-    BluetoothExt \
-    LockClock \
-    OmniSwitch \
-    KernelAdiutor \
-    SlimLauncher
 
-ifeq (OFFICIAL,$(ROM_VERSION_TAG))
-PRODUCT_PACKAGES += \
-    ScrewdOTA
-endif
+#ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
+#    PRODUCT_PROPERTY_OVERRIDES += \
+#        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
+#	ro.ota.version=$(shell date +"%Y%m%d") \
+#	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/hammerhead/ota.xml
+#endif
 
-ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
-	ro.ota.version=$(shell date +"%Y%m%d") \
-	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/hammerhead/ota.xml
-endif
-
-ifeq (screwd_flo,$(TARGET_PRODUCT))
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
-	ro.ota.version=$(shell date +"%Y%m%d") \
-	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/flo/ota.xml
-endif
+#ifeq (screwd_flo,$(TARGET_PRODUCT))
+#    PRODUCT_PROPERTY_OVERRIDES += \
+#        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
+#	ro.ota.version=$(shell date +"%Y%m%d") \#
+#	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/flo/ota.xml
+#endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -67,29 +43,5 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat
-
-# V4A files
-PRODUCT_COPY_FILES += \
-    vendor/screwd/proprietary/V4A/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    vendor/screwd/proprietary/V4A/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-    vendor/screwd/proprietary/V4A/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-    vendor/screwd/proprietary/V4A/priv-app/ViPER4Android/ViPER4Android.apk:system/priv-app/ViPER4Android/ViPER4Android.apk \
-    vendor/screwd/proprietary/V4A/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
-    
- # V4A build.prop
- PRODUCT_PROPERTY_OVERRIDES += \
-    lpa.decode=false \
-    lpa.releaselock=false \
-    lpa.use-stagefright=false \
-    tunnel.decode=false   
     
 

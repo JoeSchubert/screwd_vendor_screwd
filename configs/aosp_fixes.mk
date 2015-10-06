@@ -24,10 +24,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy
 
 # Override old AOSP defaults, we use (new) Google stock sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Lollipop.ogg \
-    ro.config.notification_sound=Tethys.ogg \
-    ro.config.alarm_alert=Osmium.ogg
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.config.ringtone=Lollipop.ogg \
+#    ro.config.notification_sound=Tethys.ogg \
+#    ro.config.alarm_alert=Osmium.ogg
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
