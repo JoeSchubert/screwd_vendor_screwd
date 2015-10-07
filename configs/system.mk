@@ -50,3 +50,7 @@ PRODUCT_COPY_FILES += \
     
 # PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
+    
+FINISHER_SCRIPT := vendor/screwd/tools/finisher
+SQUISHER_SCRIPT := vendor/screwd/tools/squisher
+CHANGELOG_SCRIPT := vendor/screwd/tools/changelog.sh    
