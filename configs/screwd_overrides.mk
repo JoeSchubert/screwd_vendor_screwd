@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+SCREWD_DEVICE := $(TARGET_PRODUCT)
+
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.screwd.device=$(DEVICE)
+    ro.screwd.device=$(SCREWD_DEVICE)
