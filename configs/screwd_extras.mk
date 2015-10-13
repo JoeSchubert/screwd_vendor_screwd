@@ -22,6 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    ScrewdOTA
 #endif
 
+PRODUCT_PACKAGES += \
+    Busybox
 
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
