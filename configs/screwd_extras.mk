@@ -25,6 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Busybox
 
+#Layers
+PRODUCT_PACKAGES += \
+    LayersManager
+
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
 #        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
