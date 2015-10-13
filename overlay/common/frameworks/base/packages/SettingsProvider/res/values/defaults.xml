@@ -17,6 +17,9 @@
  */
 -->
 <resources>
-    <!-- Use the Google backup service -->
-    <string name="def_backup_transport" translatable="false">com.google.android.backup/.BackupTransportService</string>
+
+    <!-- BackUp -->
+    <bool name="def_backup_enabled">true</bool>
+    <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+
 </resources>
