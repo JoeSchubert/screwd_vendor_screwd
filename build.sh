@@ -66,10 +66,10 @@ if [ "$(update-alternatives --list javac | wc -l)" -gt 1 ]; then
 fi
 
 # Grab the build version
-VERSION_MAJOR=$(cat $DIR_ROOT/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MAJOR := *' | sed 's/ROM_VERSION_MAJOR := //g')
-VERSION_MINOR=$(cat $DIR_ROOT/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MINOR := *' | sed 's/ROM_VERSION_MINOR := //g')
-VERSION_MAINTENANCE=$(cat $DIR_ROOT/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MAINTENANCE := *' | sed 's/ROM_VERSION_MAINTENANCE := //g')
-VERSION_TAG=$(cat $DIR_ROOT/vendor/screwd/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed 's/ROM_VERSION_TAG := //g')
+VERSION_MAJOR=$(cat $DIR_ROOT/vendor/screwd/configs/version.mk | grep 'PRODUCT_VERSION_MAJOR = *' | sed 's/PRODUCT_VERSION_MAJOR = //g')
+VERSION_MINOR=$(cat $DIR_ROOT/vendor/screwd/configs/version.mk | grep 'PRODUCT_VERSION_MINOR = *' | sed 's/PRODUCT_VERSION_MINOR = //g')
+VERSION_MAINTENANCE=$(cat $DIR_ROOT/vendor/configs/version.mk | grep 'PRODUCT_VERSION_MAINTENANCE = *' | sed 's/PRODUCT_VERSION_MAINTENANCE = //g')
+VERSION_TAG=$(cat $DIR_ROOT/vendor/screwd/configs/version.mk | grep 'SCREWD_BUILD_TYPE = *' | sed 's/SCREWD_BUILD_TYPE = //g')
 
 if [ -n "$TAG" ]; then
         VERSION=$VERSION_MAJOR.$VERSION_MINOR.$VERSION_MAINTENANCE-$VERSION_TAG
