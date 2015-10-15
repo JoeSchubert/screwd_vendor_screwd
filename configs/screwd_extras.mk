@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 #Default browser
 PRODUCT_PACKAGES += \
-    Browser
+    Chromium
 
 #LockClock
 #PRODUCT_PACKAGES += \
