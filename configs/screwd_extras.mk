@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LayersManager
 
+#Chromium
+PRODUCT_PACKAGES += \
+    Chromium
+
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
 #        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
