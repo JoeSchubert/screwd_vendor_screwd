@@ -26,7 +26,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.gservices_delay=-1 \
     net.tethering.noprovisioning=true \
     drm.service.enabled=true \
-    persist.sys.dun.override=0
+    persist.sys.dun.override=0 \
+    ro.adb.secure=0
 
 # Override old AOSP defaults, we use (new) Google stock sounds
 #PRODUCT_PROPERTY_OVERRIDES += \
