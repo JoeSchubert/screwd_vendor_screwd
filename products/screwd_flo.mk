@@ -22,11 +22,18 @@ include vendor/screwd/main.mk
 # Inherit AOSP device configuration
 $(call inherit-product, device/asus/flo/full_flo.mk)
 
+# Try to build the kernel
+TARGET_KERNEL_SOURCE := kernel/asus/flo
+TARGET_KERNEL_CONFIG := flo_defconfig
+TARGET_VARIANT_CONFIG := flo_defconfig
+TARGET_SELINUX_CONFIG := flo_defconfig
+TARGET_GCC_VERSION_ARM := 4.9
+
 # Override AOSP build properties
 PRODUCT_NAME := screwd_flo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:5.1.1/LMY48M/2128181:user/release-keys" 
-PRIVATE_BUILD_DESC="razor-user 5.1.1 LMY48M 2128181 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:6.0/MRA58K/2256973:user/release-keys" 
+PRIVATE_BUILD_DESC="razor-user 6.0 MRA58K 2256973 release-keys"
 endif
