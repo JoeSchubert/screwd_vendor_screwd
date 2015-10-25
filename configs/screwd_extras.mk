@@ -33,6 +33,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Chromium
 
+#LockClock
+PRODUCT_PACKAGES += \
+    LockClock
+
+#Google Messenger
+PRODUCT_PACKAGES += \
+    messaging
+
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
 #        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
