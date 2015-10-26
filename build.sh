@@ -162,11 +162,7 @@ echo -e ""
 # Build away!
 echo -e "${CLR_BLD_BLU}Starting compilation${CLR_RST}"
 echo -e ""
-if [ "$FLAG_USER_BUILD" = 'y' ]; then
-        mka dist
-else
-        mka bacon
-fi
+mka bacon
 echo -e ""
 
 # Check the finishing time
