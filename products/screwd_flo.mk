@@ -37,3 +37,10 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:6.0/MRA58K/2256973:user/release-keys" 
 PRIVATE_BUILD_DESC="razor-user 6.0 MRA58K 2256973 release-keys"
 endif
+
+#Optimize-it!!
+export STRICT_ALIASING := true
+export KRAIT_TUNINGS := true
+export ENABLE_GCCONLY := true
+export GRAPHITE_OPTS := true
+export CLANG_O3 := true
