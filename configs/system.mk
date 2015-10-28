@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Gapps backup script
+# backup script
  PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \

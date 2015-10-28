@@ -29,9 +29,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LayersManager
 
-#Chromium
+#Chromiumsnap
 PRODUCT_PACKAGES += \
-    Chromium
+    chromiumsnap
 
 #LockClock
 PRODUCT_PACKAGES += \
