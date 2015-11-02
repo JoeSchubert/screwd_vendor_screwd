@@ -58,13 +58,6 @@ if [ -z "$THREADS" ]; then
         fi
 fi
 
-# Pick the best JDK 7, if more than one is installed
-if [ "$(update-alternatives --list javac | wc -l)" -gt 1 ]; then
-        JDK7_PATH=$(dirname $(update-alternatives --list javac | grep '\-7\-') | tail -n1)
-        JRE7_PATH=$(dirname $JDK7_PATH/../jre/bin/java)
-        export PATH=$JDK7_PATH:$JRE7_PATH:$PATH
-fi
-
 # Grab the build version
 VERSION_MAJOR=$(cat $DIR_ROOT/vendor/screwd/configs/version.mk | grep 'PRODUCT_VERSION_MAJOR = *' | sed 's/PRODUCT_VERSION_MAJOR = //g')
 VERSION_MINOR=$(cat $DIR_ROOT/vendor/screwd/configs/version.mk | grep 'PRODUCT_VERSION_MINOR = *' | sed 's/PRODUCT_VERSION_MINOR = //g')
@@ -126,13 +119,6 @@ if [ "$FLAG_SYNC" = 'y' ]; then
         echo -e "${CLR_BLD_BLU}Downloading the latest source files${CLR_RST}"
         echo -e ""
         repo sync -j"$THREADS"
-fi
-
-# Mask Java, if it seems to be faulty
-if [ ! -r "$DIR_ROOT/out/versions_checked.mk" ] && [ -n "$(java -version 2>&1 | grep -i openjdk)" ]; then
-        echo -e "${CLR_BLD_CYA}Your Java version has not been checked and is a candidate for failure. Masquerading.${CLR_RST}"
-        echo -e ""
-        JAVA_VERSION="java_version=$(javac -version 2>&1 | head -n1 | cut -f2 -d' ')"
 fi
 
 # Check the starting time (of the real build process)
