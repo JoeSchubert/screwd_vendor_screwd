@@ -45,7 +45,7 @@ TARGET_KERNEL_CONFIG := bullhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 #Optimize-it!!
-export STRICT_ALIASING := true
-export ENABLE_GCCONLY := true
-export GRAPHITE_OPTS := true
-export CLANG_O3 := true
+#export STRICT_ALIASING := true
+#export ENABLE_GCCONLY := true
+#export GRAPHITE_OPTS := true
+#export CLANG_O3 := true
