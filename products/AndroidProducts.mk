@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq (screwd_angler,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_angler.mk
+endif
 ifeq (screwd_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_bullhead.mk
-endif
-ifeq (screwd_deb,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_deb.mk
 endif
 ifeq (screwd_flo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_flo.mk
