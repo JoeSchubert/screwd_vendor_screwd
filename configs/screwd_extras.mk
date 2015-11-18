@@ -37,6 +37,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LockClock
 
+#OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
 #Google Messenger
 PRODUCT_PACKAGES += \
     messaging
