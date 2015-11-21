@@ -25,9 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-#Chromiumsnap
+#Chromium
 PRODUCT_PACKAGES += \
-    chromiumsnap
+    Chromium
 
 #LockClock
 PRODUCT_PACKAGES += \
