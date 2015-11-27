@@ -18,6 +18,14 @@ ifneq ($(filter screwd_mako screwd_maguro screwd_toro screwd_toroplus screwd_gro
     PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
 endif
+ifeq (screwd_angler,$(TARGET_PRODUCT))
+    PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+endif
+ifeq (screwd_bullhead,$(TARGET_PRODUCT))
+    PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+endif
 ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
