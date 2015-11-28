@@ -19,7 +19,7 @@ ifeq (screwd_angler,$(TARGET_PRODUCT))
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
-# Inherit AOSP device configuration for bullhead
+# Inherit AOSP device configuration for angler
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 # Override AOSP build properties
