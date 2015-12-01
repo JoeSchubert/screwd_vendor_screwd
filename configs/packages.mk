@@ -99,4 +99,9 @@ endif
 #        libcyanogen-dsp \
 #        audio_effects.conf
 #endif
+
+# Include librsjni explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    librsjni
+
     
