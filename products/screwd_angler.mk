@@ -41,7 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Inline kernel building
 TARGET_GCC_VERSION_ARM64 := 4.9
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := angler_defconfig
+TARGET_KERNEL_CONFIG := ak_angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 #Optimize-it!!
