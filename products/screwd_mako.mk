@@ -1,3 +1,4 @@
+# Copyright (C) 2013 ParanoidAndroid Project
 # Copyright (C) 2015 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,38 +15,29 @@
 
 # Check for target product
 
-ifeq (screwd_angler,$(TARGET_PRODUCT))
+ifeq (screwd_mako,$(TARGET_PRODUCT))
 
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
-# Inherit AOSP device configuration for angler
-$(call inherit-product, device/huawei/angler/aosp_angler.mk)
+# Inherit AOSP device configuration
+$(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := screwd_angler
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := angler
-PRODUCT_MODEL := Nexus 6P
-PRODUCT_MANUFACTURER := Huawei
-
+PRODUCT_NAME := screwd_mako
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Nexus 4
+PRODUCT_MANUFACTURER := LGE
 endif
 
-# Device Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0/MDB08M/2353240:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0 MDB08M 2353240 release-keys"
-
-
-# Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 4.9
-TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := ak_angler_defconfig
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+# Kernel inline build
+TARGET_KERNEL_SOURCE := kernel/lge/mako
+TARGET_KERNEL_CONFIG := mako_defconfig
+TARGET_GCC_VERSION_ARM := 4.9
 
 #Optimize-it!!
 export STRICT_ALIASING := true
+export KRAIT_TUNINGS := true
 export ENABLE_GCCONLY := true
 export GRAPHITE_OPTS := true
 export CLANG_O3 := true

@@ -31,4 +31,9 @@ endif
 ifeq (screwd_tf300t,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_tf300t.mk
 endif
+ifeq (screwd_mako,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_mako.mk
+endif
+
+
 
