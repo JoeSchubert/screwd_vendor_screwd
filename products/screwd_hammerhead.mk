@@ -28,7 +28,7 @@ PRODUCT_NAME := screwd_hammerhead
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="hammerhead" BUILD_FINGERPRINT="google/hammerhead/hammerhead:6.0/MDB08M/353240:user/release-keys" PRIVATE_BUILD_DESC="hammerhead-user 6.0 MDB08M 2353240 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="hammerhead" BUILD_FINGERPRINT="google/hammerhead/hammerhead:6.0.1/MMB29K/2419427:user/release-keys" PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MMB29K 2419427 release-keys"
 endif
 
 # Kernel inline build

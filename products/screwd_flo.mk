@@ -34,8 +34,8 @@ PRODUCT_NAME := screwd_flo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:6.0/MDB08M/2353240:user/release-keys" 
-PRIVATE_BUILD_DESC="razor-user 6.0 MDB08M 2353240 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:6.0.1/MMB29K/2419427:user/release-keys" 
+PRIVATE_BUILD_DESC="razor-user 6.0.1 MMB29K 2419427 release-keys"
 endif
 
 #Optimize-it!!

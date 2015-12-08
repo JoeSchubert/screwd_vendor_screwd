@@ -27,7 +27,7 @@ PRODUCT_NAME := screwd_shamu
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="shamu" BUILD_FINGERPRINT="google/shamu/shamu:6.0/MRA58V/2324235:user/release-keys" PRIVATE_BUILD_DESC="shamu-user 6.0 MRA58V 2324235 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="shamu" BUILD_FINGERPRINT="google/shamu/shamu:6.0.1/MMB29K/2419427:user/release-keys" PRIVATE_BUILD_DESC="shamu-user 6.0.1 MMB29K 2419427 release-keys"
 endif
 
 # Kernel inline build
