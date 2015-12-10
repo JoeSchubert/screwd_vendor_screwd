@@ -29,10 +29,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# APN
-PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 # backup script
  PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \

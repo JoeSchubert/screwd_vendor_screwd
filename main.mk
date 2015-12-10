@@ -17,7 +17,6 @@
 
 include vendor/screwd/vendor.mk
 include vendor/screwd/configs/aosp_fixes.mk
-include vendor/screwd/configs/telephony.mk
 include vendor/screwd/configs/system.mk
 include vendor/screwd/configs/screwd.mk
 include vendor/screwd/configs/screwd_extras.mk
