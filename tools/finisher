@@ -23,7 +23,7 @@ fi
 
 if [ ! -z "$IS_RELEASED_BUILD" ]; then
    BUILD_PROP=$OUT/system/build.prop
-   LAST_BUILD_PROP=$ANDROID_BUILD_TOP/last_build-$SCREWD_BUILD.prop
+   LAST_BUILD_PROP=$ANDROID_BUILD_TOP/last_build-$SCREWD_DEVICE.prop
    echo $CL_CYN"Copying '${BUILD_PROP}' to '${LAST_BUILD_PROP}'"$CL_RST
    cp $BUILD_PROP $LAST_BUILD_PROP
 fi

@@ -51,27 +51,6 @@ then
     optimize_png () {
         pngquant --speed 1 --force --ext .png $1 1> /dev/null 2> /dev/null
     }
-elif [ "$(which pngcrush)" != "" ];
-then
-    optimize_png () {
-        pngcrush -q ${BRUTECRUSH} $1 ${1}.out 1> /dev/null 2> /dev/null
-        mv ${1}.out ${1} 2> /dev/null
-    }
-elif [ "$(which optipng)" != "" ];
-then
-    optimize_png () {
-        optipng -o7 -quiet $1 1> /dev/null 2> /dev/null
-    }
-elif [ "$(which pngout-static)" != "" ];
-then
-    optimize_png () {
-        pngout-static $1
-    }
-elif [ "$(which pngout)" != "" ];
-then
-    optimize_png () {
-        pngout $1
-    }
 else
     echo -e ${red}"Please install pngquant, pngcrush, optipng, or pngout"${txtrst}
     exit 1;
@@ -96,13 +75,8 @@ then
 
     if [ "$2" != "" ];
     then
-        if [ "$DEFAULT_SYSTEM_DEV_CERTIFICATE" ]; then
-            CERT_PATH=`dirname $DEFAULT_SYSTEM_DEV_CERTIFICATE`
-        else
-            CERT_PATH=build/target/product/security
-        fi
-        CERT="$CERT_PATH"/$2.x509.pem
-        KEY="$CERT_PATH"/$2.pk8
+        CERT=build/target/product/security/$2.x509.pem
+        KEY=build/target/product/security/$2.pk8
         if [ ! -f "$ANDROID_BUILD_TOP/$CERT" ];
         then
             echo -e ${red}"$CERT does not exist!"${txtrst};
@@ -159,6 +133,6 @@ then
     fi
     rm $BASE/$1.old
 else
-    echo -e "Usage: $0 [apk file]"
+    echo "Usage: $0 [apk file]"
 fi
 
