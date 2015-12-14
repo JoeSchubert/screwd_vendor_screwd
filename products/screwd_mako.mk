@@ -33,7 +33,7 @@ endif
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := hells_defconfig
-TARGET_GCC_VERSION_ARM := 4.9
+TARGET_GCC_VERSION_ARM := 5.2
 
 #Optimize-it!!
 export STRICT_ALIASING := true
