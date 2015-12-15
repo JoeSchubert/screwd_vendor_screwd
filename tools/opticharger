@@ -97,7 +97,7 @@ then
             echo -e ${red}"Unable to find certificate for $NAME"${txtrst}
             exit 1;
         fi
-        if [ "$CERT" = "PRESIGNED" ] || [ "$NAME" = "webview.apk" ];
+        if [ "$CERT" = "PRESIGNED" ] || [ "$NAME" = "webview.apk" ] || [ "$NAME" = "chromiumsnap.apk" ];
         then
             echo -e ${cya}"$NAME is presigned, skipping"${txtrst}
             exit 1;
