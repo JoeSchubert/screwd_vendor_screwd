@@ -13,14 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Add PA bootanimation based on device resolution
-ifneq ($(filter screwd_mako screwd_maguro screwd_toro screwd_toroplus screwd_grouper screwd_tilapia,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
-endif
 ifeq (screwd_angler,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/2560x1440.zip:system/media/bootanimation.zip
 endif
 ifeq (screwd_bullhead,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
@@ -32,13 +27,9 @@ ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 endif
 ifeq (screwd_shamu,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/2560x1440.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter screwd_deb screwd_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_manta,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/2560x1600.zip:system/media/bootanimation.zip
 endif
