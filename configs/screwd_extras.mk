@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniSwitch
 
-#Google Messenger
+#AOSP Messenger
 PRODUCT_PACKAGES += \
     messaging
 
