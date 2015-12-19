@@ -15,21 +15,25 @@
 
 ifeq (screwd_angler,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/2560x1440.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
 endif
 ifeq (screwd_bullhead,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/bullhead_bootanimation.zip:system/media/bootanimation.zip
 endif
 ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/hammerhead_bootanimation.zip:system/media/bootanimation.zip
+endif
+ifeq (screwd_mako,$(TARGET_PRODUCT))
+    PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/bootanimation/mako_bootanimation.zip:system/media/bootanimation.zip
 endif
 ifeq (screwd_shamu,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/2560x1440.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/shamu_bootanimation.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter screwd_deb screwd_flo,$(TARGET_PRODUCT)),)
+ifeq (screwd_flo,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/screwd/prebuilt/bootanimation/flo_bootanimation.zip:system/media/bootanimation.zip
 endif
