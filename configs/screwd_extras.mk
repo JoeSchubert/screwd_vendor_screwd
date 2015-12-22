@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     messaging
 
+#Gallery2
+PRODUCT_PACKAGES += \
+    Gallery2
+
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
 #        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
