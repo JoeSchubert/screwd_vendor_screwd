@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniSwitch
 
+#OmniJAWS
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 #AOSP Messenger
 PRODUCT_PACKAGES += \
     messaging
