@@ -71,6 +71,6 @@
         <item>airplane</item>
         <item>bugreport</item>
         <item>silent</item>
-        <item>users</item>
+        <!--<item>users</item>-->
     </string-array>
 </resources>
