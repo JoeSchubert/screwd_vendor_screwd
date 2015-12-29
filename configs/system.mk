@@ -54,11 +54,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/screwd/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
-ifeq (screwd_mako,$(TARGET_PRODUCT))
 # APN
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml   
-endif
 
 FINISHER_SCRIPT := vendor/screwd/tools/finisher
 SQUISHER_SCRIPT := vendor/screwd/tools/squisher
