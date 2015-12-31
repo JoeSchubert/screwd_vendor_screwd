@@ -25,10 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-#Layers
-PRODUCT_PACKAGES += \
-    LayersManager
-
 #Chromiumsnap
 PRODUCT_PACKAGES += \
     chromiumsnap
