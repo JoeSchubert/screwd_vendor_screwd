@@ -10,20 +10,6 @@ export V=6.0
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
 
-# Backup layers
-preserve_layers() {
-  mkdir -p /tmp/layers
-  cp -a /system/vendor/overlay/* /tmp/layers
-  chmod 644 /tmp/layers/*.apk
-}
-
-# Restore Layers
-restore_layers() {
-  mkdir -p /system/vendor/overlay
-  cp -a /tmp/layers/* /system/vendor/overlay
-  rm -rf /tmp/layers
-}
-
 # Backup hosts
 preserve_hosts() {
   cp -a /system/etc/hosts /tmp/hosts
@@ -78,7 +64,6 @@ case "$1" in
     mkdir -p $C
     check_prereq
     preserve_addon_d
-    preserve_layers
     preserve_hosts
     run_stage pre-backup
     run_stage backup
@@ -90,7 +75,6 @@ case "$1" in
     run_stage restore
     run_stage post-restore
     restore_addon_d
-    restore_layers
     restore_hosts
     rm -rf $C
     sync
