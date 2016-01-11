@@ -40,7 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_GCC_VERSION_ARM := 5.2
+TARGET_GCC_VERSION_ARM := 5.3
 
 #Optimize-it!!
 export STRICT_ALIASING := true

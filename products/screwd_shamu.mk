@@ -39,7 +39,7 @@ endif
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 TARGET_KERNEL_CONFIG := shamu_defconfig
-TARGET_GCC_VERSION_ARM := 5.2
+TARGET_GCC_VERSION_ARM := 5.3
 
 #Optimize-it!!
 export STRICT_ALIASING := true
