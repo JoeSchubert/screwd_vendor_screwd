@@ -49,3 +49,6 @@ export STRICT_ALIASING := true
 export ENABLE_GCCONLY := true
 export GRAPHITE_OPTS := true
 export CLANG_O3 := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="David Smit (dsmitty166)"
