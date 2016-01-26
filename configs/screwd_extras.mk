@@ -18,9 +18,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
 #ifeq (OFFICIAL,$(ROM_VERSION_TAG))
-#PRODUCT_PACKAGES += \
-#    ScrewdOTA
-#endif
+PRODUCT_PACKAGES += \
+    ScrewdOTA
 
 PRODUCT_PACKAGES += \
     Busybox
@@ -44,6 +43,10 @@ PRODUCT_PACKAGES += \
 #Gallery2
 PRODUCT_PACKAGES += \
     Gallery2
+
+#Default launcher
+PRODUCT_PACKAGES += \
+    SlimLauncher
 
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
