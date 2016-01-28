@@ -50,4 +50,4 @@ export GRAPHITE_OPTS := true
 export CLANG_O3 := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Corey Edwards (MrApocalypse), Fabio Borda (fabi92)"
+	DEVICE_MAINTAINERS="MrApocalypse, Fabio Borda (fabi92)"
