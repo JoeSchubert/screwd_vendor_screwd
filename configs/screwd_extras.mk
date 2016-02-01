@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
 
 #Default launcher
 PRODUCT_PACKAGES += \
-    SlimLauncher
+    Launcher3
 
 #ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
 #    PRODUCT_PROPERTY_OVERRIDES += \
