@@ -17,10 +17,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-#ifeq (OFFICIAL,$(ROM_VERSION_TAG))
-#PRODUCT_PACKAGES += \
-#    ScrewdOTA
-#endif
+ifeq (MILESTONE,$(SCREWD_BUILD_TYPE))
+PRODUCT_PACKAGES += \
+    ScrewdOTA
+endif
 
 PRODUCT_PACKAGES += \
     Busybox
@@ -48,20 +48,6 @@ PRODUCT_PACKAGES += \
 #Default launcher
 PRODUCT_PACKAGES += \
     Launcher3
-
-#ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
-#    PRODUCT_PROPERTY_OVERRIDES += \
-#        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
-#	ro.ota.version=$(shell date +"%Y%m%d") \
-#	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/hammerhead/ota.xml
-#endif
-
-#ifeq (screwd_flo,$(TARGET_PRODUCT))
-#    PRODUCT_PROPERTY_OVERRIDES += \
-#        ro.ota.screwd=ScrewdAOSP-$(ROM_VERSION_TAG) \
-#	ro.ota.version=$(shell date +"%Y%m%d") \#
-#	ro.ota.manifest=https://dl.dropboxusercontent.com/u/18151599/OTA/flo/ota.xml
-#endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
