@@ -52,4 +52,4 @@ export CLANG_O3 := true
 export CORTEX_TUNINGS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="David Smit (dsmitty166)" "Dustin Rnne (f100cleveland)"
+	DEVICE_MAINTAINERS="David Smit (dsmitty166) & Dustin Rinne (f100cleveland)"
