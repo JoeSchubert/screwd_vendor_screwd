@@ -50,6 +50,8 @@ export ENABLE_GCCONLY := true
 export GRAPHITE_OPTS := true
 export CLANG_O3 := true
 export CORTEX_TUNINGS := true
+export ENABLE_SANITIZE := true
+export USE_PIPE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="David Smit (dsmitty166) & Dustin Rinne (f100cleveland)"
