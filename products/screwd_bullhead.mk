@@ -49,3 +49,5 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 #export ENABLE_GCCONLY := true
 #export GRAPHITE_OPTS := true
 #export CLANG_O3 := true
+export ENABLE_SANITIZE := true
+export USE_PIPE := true
