@@ -43,7 +43,12 @@ TARGET_GCC_VERSION_ARM := 5.3
 
 #Optimize-it!!
 export STRICT_ALIASING := true
-export KRAIT_TUNINGS := true
+
+#Optimize-it!!
+export STRICT_ALIASING := true
 export ENABLE_GCCONLY := true
+export KRAIT_TUNINGS := true
 export GRAPHITE_OPTS := true
 export CLANG_O3 := true
+export ENABLE_SANITIZE := true
+export USE_PIPE := true
