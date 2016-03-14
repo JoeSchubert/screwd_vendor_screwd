@@ -23,9 +23,8 @@ PRODUCT_PACKAGES += \
 endif
 
 #Snap
-PRODUCT_PACKAGES += \
-    Snap
-
+#PRODUCT_PACKAGES += \
+#    Snap
 
 PRODUCT_PACKAGES += \
     Busybox
