@@ -6,6 +6,9 @@ ifeq (Linux,$(UNAME))
   HOST_OS := linux
 endif
 
+# Disable jack building to fix clang errors
+export ANDROID_COMPILE_WITH_JACK := false
+
 ifeq (linux,$(HOST_OS))
 ifeq (arm,$(TARGET_ARCH))
 # ANDROIDEABI TOOLCHAIN INFO
