@@ -33,4 +33,5 @@ DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
 export $(DTC_VER)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dtc.version=$(DRAGONTC_VERSION)
+    ro.dtc.version=$(DTC_VER)
+
