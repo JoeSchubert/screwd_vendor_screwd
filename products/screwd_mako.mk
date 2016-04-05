@@ -35,6 +35,12 @@ TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := hells_defconfig
 TARGET_GCC_VERSION_ARM := 5.3
 
+# Device Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=occam \
+    BUILD_FINGERPRINT=google/occam/mako:6.0.1/MMB29X/2704508:user/release-keys \
+    PRIVATE_BUILD_DESC="occam-user 6.0.1 MMB29X 2704508 release-keys"
+
 #Optimize-it!!
 export STRICT_ALIASING := true
 export KRAIT_TUNINGS := true
