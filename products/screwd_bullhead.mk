@@ -53,3 +53,5 @@ export CLANG_O3 := true
 export ENABLE_SANITIZE := true
 export USE_PIPE := true
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Omkar Shinde (Megatron007)"
