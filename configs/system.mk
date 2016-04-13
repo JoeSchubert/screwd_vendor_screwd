@@ -43,9 +43,6 @@ PRODUCT_COPY_FILES += \
 # HOSTS file
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/hosts:system/etc/hosts
-    
-# PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
 
 ifneq ($(filter screwd_flo screwd_hammerhead screwd_shamu,$(TARGET_PRODUCT)),)
 # media effects
