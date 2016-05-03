@@ -7,9 +7,9 @@ ifdef SCREWD_BUILD_EXTRA
 endif
 ifndef SCREWD_BUILD_TYPE
     SCREWD_BUILD_TYPE := UNOFFICIAL
-    SCREWD_POSTFIX := $(shell date +"%Y%m%d-%H%M")
 endif
 
+SCREWD_POSTFIX := $(shell date +"%Y%m%d-%H%M")
 SCREWD_DEVICE_SHORT := $(SCREWD_DEVICE)
 SCREWD_DEVICE_SHORT := $(subst screwd_,,$(SCREWD_DEVICE_SHORT))
 
