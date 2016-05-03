@@ -34,8 +34,8 @@ endif
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hammerhead \
-    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MMB29X/2704508:user/release-keys \
-    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MMB29X 2704508 release-keys"
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MOB30H/2751534:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MOB30H 2751534 release-keys"
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
