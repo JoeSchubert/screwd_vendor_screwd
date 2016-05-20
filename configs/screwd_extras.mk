@@ -17,7 +17,7 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-ifeq (MILESTONE,$(SCREWD_BUILD_TYPE))
+ifneq (UNOFFICIAL,$(SCREWD_BUILD_TYPE))
 PRODUCT_PACKAGES += \
     ScrewdOTA
 endif
