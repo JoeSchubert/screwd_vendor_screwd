@@ -1,1 +1,3 @@
 allow platform_app nfc_service:service_manager find;
+# e.g. renderscript in Gallery2 wants execute perms
+allow platform_app app_data_file:file execute;
