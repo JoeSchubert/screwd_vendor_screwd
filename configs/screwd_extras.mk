@@ -29,9 +29,9 @@ endif
 PRODUCT_PACKAGES += \
     Busybox
 
-#Chromium
+#Default browser
 PRODUCT_PACKAGES += \
-    Chromium
+    Browser
 
 #LockClock
 PRODUCT_PACKAGES += \
