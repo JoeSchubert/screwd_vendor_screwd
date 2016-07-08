@@ -40,7 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 
 # Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 4.9
+TARGET_GCC_VERSION_ARM64 := 5.3
 TARGET_KERNEL_SOURCE := kernel/lge/bullhead
 TARGET_KERNEL_CONFIG := bullhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
