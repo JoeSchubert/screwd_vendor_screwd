@@ -30,6 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.cmte.legacy.version=1
 
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/screwd/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
+
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
