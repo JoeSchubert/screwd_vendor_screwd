@@ -1,4 +1,4 @@
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2016 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,19 +39,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 
 # Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 6.0
+#TARGET_GCC_VERSION_ARM64 := 6.0
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := saber_defconfig
+TARGET_KERNEL_CONFIG := angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 #Optimize-it!!
-export STRICT_ALIASING := true
-export ENABLE_GCCONLY := true
-export GRAPHITE_OPTS := true
-export CLANG_O3 := true
-export CORTEX_TUNINGS := true
-export ENABLE_SANITIZE := true
-export USE_PIPE := true
+#export STRICT_ALIASING := true
+#export ENABLE_GCCONLY := true
+#export GRAPHITE_OPTS := true
+#export CLANG_O3 := true
+#export CORTEX_TUNINGS := true
+#export ENABLE_SANITIZE := true
+#export USE_PIPE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="David Smit (dsmitty166) & Dustin Rinne (f100cleveland)"
+	DEVICE_MAINTAINERS="David Smit (dsmitty166), Dustin Rinne (f100cleveland), MrApocalypse"

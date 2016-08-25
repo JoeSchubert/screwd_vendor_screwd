@@ -1,5 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2016 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,8 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.debuggable=1 \
-    ro.adb.secure=0 \
-    ro.cmte.legacy.version=1
+    ro.adb.secure=0
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
@@ -39,10 +38,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter screwd_hammerhead screwd_flo screwd_shamu,$(TARGET_PRODUCT)),)
-PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-else
-PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
-endif
+#ifneq ($(filter screwd_hammerhead screwd_flo screwd_shamu,$(TARGET_PRODUCT)),)
+#PRODUCT_COPY_FILES += \
+#    vendor/screwd/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+#else
+#PRODUCT_COPY_FILES += \
+#    vendor/screwd/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+#endif

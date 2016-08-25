@@ -1,5 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2016 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -44,24 +44,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/hosts:system/etc/hosts
 
-ifneq ($(filter screwd_flo screwd_hammerhead screwd_shamu,$(TARGET_PRODUCT)),)
+#ifneq ($(filter screwd_flo screwd_hammerhead screwd_shamu,$(TARGET_PRODUCT)),)
 # media effects
-PRODUCT_COPY_FILES +=  \
-    vendor/screwd/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/screwd/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
-endif
+#PRODUCT_COPY_FILES +=  \
+#    vendor/screwd/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+#    vendor/screwd/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+#endif
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
+#PRODUCT_PACKAGES += \
+#    org.dirtyunicorns.utils
 
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
+#PRODUCT_BOOT_JARS += \
+#    org.dirtyunicorns.utils
 
 # APN
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml   
 
-FINISHER_SCRIPT := vendor/screwd/tools/finisher
-SQUISHER_SCRIPT := vendor/screwd/tools/squisher
-CHANGELOG_SCRIPT := vendor/screwd/tools/changelog.sh    

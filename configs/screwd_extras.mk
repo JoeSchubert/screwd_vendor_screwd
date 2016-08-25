@@ -1,5 +1,5 @@
 # Copyright (C) 2014 ParanoidAndroid Project
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2016 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,14 +17,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-ifneq (UNOFFICIAL,$(SCREWD_BUILD_TYPE))
-PRODUCT_PACKAGES += \
-    ScrewdOTA
-endif
-
-#Snap
+#ifneq (UNOFFICIAL,$(SCREWD_BUILD_TYPE))
 #PRODUCT_PACKAGES += \
-#    Snap
+#    ScrewdOTA
+#endif
 
 PRODUCT_PACKAGES += \
     Busybox
@@ -34,16 +30,16 @@ PRODUCT_PACKAGES += \
     Browser
 
 #LockClock
-PRODUCT_PACKAGES += \
-    LockClock
+#PRODUCT_PACKAGES += \
+#    LockClock
 
 #OmniSwitch
-PRODUCT_PACKAGES += \
-    OmniSwitch
+#PRODUCT_PACKAGES += \
+#    OmniSwitch
 
 #OmniJAWS
-PRODUCT_PACKAGES += \
-    OmniJaws
+#PRODUCT_PACKAGES += \
+#    OmniJaws
 
 #AOSP Messenger
 PRODUCT_PACKAGES += \
@@ -58,10 +54,10 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 # Extra tools
-PRODUCT_PACKAGES += \
-    e2fsck \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat
+#PRODUCT_PACKAGES += \
+#    e2fsck \
+#    mount.exfat \
+#    fsck.exfat \
+#    mkfs.exfat
     
 
