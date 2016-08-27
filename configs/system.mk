@@ -51,13 +51,6 @@ PRODUCT_COPY_FILES += \
 #    vendor/screwd/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 #endif
 
-# DU Utils Library
-#PRODUCT_PACKAGES += \
-#    org.dirtyunicorns.utils
-
-#PRODUCT_BOOT_JARS += \
-#    org.dirtyunicorns.utils
-
 # APN
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml   
