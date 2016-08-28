@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/hosts:system/etc/hosts
 
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
 #ifneq ($(filter screwd_flo screwd_hammerhead screwd_shamu,$(TARGET_PRODUCT)),)
 # media effects
 #PRODUCT_COPY_FILES +=  \
