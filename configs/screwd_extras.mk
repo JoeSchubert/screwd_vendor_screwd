@@ -23,6 +23,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #endif
 
 PRODUCT_PACKAGES += \
+    masquerade
+
+PRODUCT_PACKAGES += \
     Busybox
 
 #Default browser
