@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
+PRODUCT_PACKAGES += \
+    Stk
+
 #Default browser
 PRODUCT_PACKAGES += \
     Chromium
