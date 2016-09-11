@@ -29,6 +29,9 @@ PRODUCT_DEVICE := angler
 PRODUCT_MODEL := Nexus 6P
 PRODUCT_MANUFACTURER := Huawei
 
+PRODUCT_PACKAGES += \
+    AOSPLinks
+
 endif
 
 # Device Fingerprint
