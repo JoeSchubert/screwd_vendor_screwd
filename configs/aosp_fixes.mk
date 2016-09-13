@@ -38,10 +38,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Proprietary latinime libs needed for Keyboard swyping
-#ifneq ($(filter screwd_hammerhead screwd_flo screwd_shamu,$(TARGET_PRODUCT)),)
-#PRODUCT_COPY_FILES += \
-#    vendor/screwd/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-#else
-#PRODUCT_COPY_FILES += \
-#    vendor/screwd/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
-#endif
+ifneq ($(filter screwd_hammerhead screwd_flo screwd_shamu,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+endif
