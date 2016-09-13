@@ -40,16 +40,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_GCC_VERSION_ARM := 5.3
+TARGET_GCC_VERSION_ARM := 4.8
 
 #Optimize-it!!
-export STRICT_ALIASING := true
-export KRAIT_TUNINGS := true
-export ENABLE_GCCONLY := true
-export GRAPHITE_OPTS := true
-export CLANG_O3 := true
-export ENABLE_SANITIZE := true
-export USE_PIPE := true
+#export STRICT_ALIASING := true
+#export KRAIT_TUNINGS := true
+#export ENABLE_GCCONLY := true
+#export GRAPHITE_OPTS := true
+#export CLANG_O3 := true
+#export ENABLE_SANITIZE := true
+#export USE_PIPE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="MrApocalypse, Fabio Borda (fabi92)"
