@@ -43,13 +43,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 endif
 
 #Optimize-it!!
-export STRICT_ALIASING := true
-export KRAIT_TUNINGS := true
-export ENABLE_GCCONLY := true
-export GRAPHITE_OPTS := true
-export CLANG_O3 := true
-export ENABLE_SANITIZE := true
-export USE_PIPE := true
+#export STRICT_ALIASING := true
+#export KRAIT_TUNINGS := true
+#export ENABLE_GCCONLY := true
+#export GRAPHITE_OPTS := true
+#export CLANG_O3 := true
+#export ENABLE_SANITIZE := true
+#export USE_PIPE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="Corey Edwards (MrApocalypse)"
