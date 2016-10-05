@@ -40,8 +40,8 @@ PRODUCT_PACKAGES += \
 #    LockClock
 
 #OmniSwitch
-#PRODUCT_PACKAGES += \
-#    OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
 
 #OmniJAWS
 #PRODUCT_PACKAGES += \
