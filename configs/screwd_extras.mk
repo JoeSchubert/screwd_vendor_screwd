@@ -36,8 +36,8 @@ PRODUCT_PACKAGES += \
     Chromium
 
 #LockClock
-#PRODUCT_PACKAGES += \
-#    LockClock
+PRODUCT_PACKAGES += \
+    LockClock
 
 #OmniSwitch
 PRODUCT_PACKAGES += \
