@@ -77,6 +77,9 @@
         <item>com.google.android.apps.tycho</item>
     </string-array>
 
+    <!-- default dnd acess packages -->
+    <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera</string>
+
     <!-- non blockable notification packages -->
     <string-array name="config_nonBlockableNotificationPackages">
         <item>com.android.dialer</item>
