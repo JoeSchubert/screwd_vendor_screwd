@@ -32,7 +32,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.debuggable=1 \
-    ro.adb.secure=0
+    ro.adb.secure=0 \
+    ro.setupwizard.rotation_locked=true
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
