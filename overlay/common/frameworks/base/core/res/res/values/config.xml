@@ -69,9 +69,7 @@
         <item>power</item>
         <item>reboot</item>
         <item>airplane</item>
-        <item>bugreport</item>
         <item>silent</item>
-        <!--<item>users</item>-->
     </string-array>
 
     <!-- Hide Project Fi app unless it is being used -->
