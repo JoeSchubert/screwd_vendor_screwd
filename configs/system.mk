@@ -48,12 +48,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
-#ifneq ($(filter screwd_flo screwd_hammerhead screwd_shamu,$(TARGET_PRODUCT)),)
-# media effects
-#PRODUCT_COPY_FILES +=  \
-#    vendor/screwd/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-#    vendor/screwd/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
-#endif
+# Pull in Prebuilt applications 
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
 
 # APN
 PRODUCT_COPY_FILES += \
