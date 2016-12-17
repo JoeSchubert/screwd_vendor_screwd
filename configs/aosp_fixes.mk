@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     ro.debuggable=1 \
     ro.adb.secure=0 \
-    ro.setupwizard.rotation_locked=true
+    ro.setupwizard.rotation_locked=true \
+    ro.opa.eligible_device=true
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
