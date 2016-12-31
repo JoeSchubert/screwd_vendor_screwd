@@ -86,4 +86,11 @@ PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/zip/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 endif
+
+# For stereo widening effect
+ifneq ($(TARGET_NO_DSPMANAGER), true)
+    PRODUCT_PACKAGES += \
+        libcyanogen-dsp \
+        audio_effects.conf
+endif
     
