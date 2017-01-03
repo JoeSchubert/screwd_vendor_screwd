@@ -48,6 +48,13 @@ TARGET_KERNEL_SOURCE := kernel/huawei/angler
 TARGET_KERNEL_CONFIG := angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
+USING_CHOPPED64_KENREL = $(shell grep -rnw 'kernel/huawei/angler/arch/arm64/configs/angler_defconfig' -e "-Chopped64" -c)
+
+ifeq ($(USING_CHOPPED64_KENREL),1)
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/etc/init.chopped64.rc:root/init.chopped64.rc
+endif
+
 #Optimize-it!!
 #export STRICT_ALIASING := true
 #export ENABLE_GCCONLY := true
