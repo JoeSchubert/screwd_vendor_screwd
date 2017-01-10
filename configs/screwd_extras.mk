@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3
 
+#OmniStyle 
+PRODUCT_PACKAGES += \
+    OmniStyle
 
 #Lean
 PRODUCT_PACKAGES += \
