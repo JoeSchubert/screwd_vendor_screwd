@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3
 
+
+#Lean
+PRODUCT_PACKAGES += \
+    Lean
+
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
