@@ -42,6 +42,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     
 endif
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 #Optimize-it!!
 #export STRICT_ALIASING := true
 #export KRAIT_TUNINGS := true

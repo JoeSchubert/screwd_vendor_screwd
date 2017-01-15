@@ -38,6 +38,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.1/N4F26I/3532671:user/release-keys \
     PRIVATE_BUILD_DESC="bullhead-user 7.1.1 N4F26I 3532671 release-keys"
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 
 # Inline kernel building
 TARGET_GCC_VERSION_ARM64 := 4.9
