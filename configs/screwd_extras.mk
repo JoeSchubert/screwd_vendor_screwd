@@ -13,15 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
-#ifneq (UNOFFICIAL,$(SCREWD_BUILD_TYPE))
-#PRODUCT_PACKAGES += \
-#    ScrewdOTA
-#endif
-
 PRODUCT_PACKAGES += \
     masquerade
 
@@ -77,12 +68,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
-
-# Extra tools
-#PRODUCT_PACKAGES += \
-#    e2fsck \
-#    mount.exfat \
-#    fsck.exfat \
-#    mkfs.exfat
     
-

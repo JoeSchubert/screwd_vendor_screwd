@@ -43,7 +43,3 @@ TARGET_GCC_VERSION_ARM := 4.9
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
-
-#Optimize-it!!
-export STRICT_ALIASING := true
-export CLANG_O3 := true

@@ -34,7 +34,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
     ro.adb.secure=0 \
     ro.setupwizard.rotation_locked=true \
-    ro.opa.eligible_device=true
+    ro.opa.eligible_device=true \
+    ro.build.selinux=1
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \

@@ -40,8 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/angler/angler:7.1.1/N4F26J/3549317:user/release-keys \
     PRIVATE_BUILD_DESC="angler-user 7.1.1 N4F26J 3549317 release-keys"
 
-
-
 # Inline kernel building
 TARGET_GCC_VERSION_ARM64 := 6.x
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
@@ -57,15 +55,3 @@ ifeq ($(USING_CHOPPED64_KENREL),1)
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/init.chopped64.rc:root/init.chopped64.rc
 endif
-
-#Optimize-it!!
-#export STRICT_ALIASING := true
-#export ENABLE_GCCONLY := true
-#export GRAPHITE_OPTS := true
-#export CLANG_O3 := true
-#export CORTEX_TUNINGS := true
-#export ENABLE_SANITIZE := true
-#export USE_PIPE := true
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="David Smit (dsmitty166), Dustin Rinne (f100cleveland), MrApocalypse"

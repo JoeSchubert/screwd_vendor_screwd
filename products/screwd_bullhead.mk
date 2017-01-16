@@ -47,14 +47,3 @@ TARGET_GCC_VERSION_ARM64 := 4.9
 TARGET_KERNEL_SOURCE := kernel/lge/bullhead
 TARGET_KERNEL_CONFIG := bullhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-
-#Optimize-it!!
-#export STRICT_ALIASING := true
-#export ENABLE_GCCONLY := true
-#export GRAPHITE_OPTS := true
-#export CLANG_O3 := true
-#export ENABLE_SANITIZE := true
-#export USE_PIPE := true
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Omkar Shinde (Megatron007)"
