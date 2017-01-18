@@ -1,5 +1,4 @@
-# Copyright (C) 2014 ParanoidAndroid Project
-# Copyright (C) 2016 Screw'd AOSP
+# Copyright (C) 2017 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,4 +67,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
+
+# Pull in Prebuilt applications 
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
     

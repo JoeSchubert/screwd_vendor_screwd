@@ -14,26 +14,26 @@
 # limitations under the License.
 
 # Include overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/$(VENDOR)/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/$(VENDOR)/overlay/$(TARGET_PRODUCT)
+PRODUCT_PACKAGE_OVERLAYS += vendor/screwd/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/screwd/overlay/$(TARGET_PRODUCT)
 
 # Copy custom ramdisk
 PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/init.$(VENDOR).rc:root/init.$(VENDOR).rc
+    vendor/screwd/prebuilt/etc/init.screwd.rc:root/init.screwd.rc
 
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/screwd/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/screwd/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # backup script
  PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+    vendor/screwd/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/screwd/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/screwd/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -48,10 +48,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
-# Pull in Prebuilt applications 
-$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
-
 # APN
 PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml   
+    vendor/screwd/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml   
 

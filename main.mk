@@ -1,5 +1,4 @@
-# Copyright (C) 2013 ParanoidAndroid Project
-# Copyright (C) 2016 Screw'd AOSP
+# Copyright (C) 2017 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,15 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-
-include vendor/screwd/vendor.mk
 include vendor/screwd/configs/aosp_fixes.mk
 include vendor/screwd/configs/system.mk
-include vendor/screwd/configs/screwd_extras.mk
-include vendor/screwd/configs/screwd_overrides.mk
+include vendor/screwd/configs/packages.mk
+include vendor/screwd/configs/overrides.mk
 include vendor/screwd/configs/bootanimation.mk
 include vendor/screwd/configs/version.mk
 include vendor/screwd/configs/uber.mk
-
-
