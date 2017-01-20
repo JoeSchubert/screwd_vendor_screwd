@@ -21,10 +21,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Stk
 
-#Default browser
-PRODUCT_PACKAGES += \
-    Chromium
-
 #LockClock
 PRODUCT_PACKAGES += \
     LockClock
