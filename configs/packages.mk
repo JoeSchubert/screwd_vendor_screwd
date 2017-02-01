@@ -57,6 +57,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+
 # Pull in Prebuilt applications 
 $(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
     
