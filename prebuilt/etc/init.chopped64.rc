@@ -138,9 +138,6 @@ on property:sys.boot_completed=1
    # Tune Adrenoboost
    write /sys/devices/soc.0/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/adrenoboost 1
 
-   # Very light LMK profile
-   write /sys/module/lowmemorykiller/parameters/minfree "7160,14320,21480,28640,35800,42960"
-
    # Process reclaim
    write /proc/PID/reclaim all
 
