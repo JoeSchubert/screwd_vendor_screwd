@@ -16,6 +16,7 @@
 
 # Jack server heap size
 export ANDROID_JACK_VM_ARGS += "-Xmx4g"
+export _JAVA_OPTIONS="-Xmx4g"
 
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
