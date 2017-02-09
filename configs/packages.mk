@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Lean
 
+# SnapDragon Browser
+PRODUCT_PACKAGES += \
+    SnapBrowser
+
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
