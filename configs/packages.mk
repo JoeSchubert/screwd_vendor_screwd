@@ -29,10 +29,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniSwitch
 
-#Wallpaper Picker
-PRODUCT_PACKAGES += \
-    WallpaperPicker
-
 #OmniJAWS
 #PRODUCT_PACKAGES += \
 #    OmniJaws
