@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
+ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
@@ -65,6 +66,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
 
+else ifeq ($(DEFAULT_ROOT_METHOD),supersu)
+PRODUCT_PACKAGES += \
+    Busybox
+
+PRODUCT_COPY_FILES += \
+    vendor/screwd/prebuilt/zip/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
+endif
 # Pull in Prebuilt applications 
 $(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
     
