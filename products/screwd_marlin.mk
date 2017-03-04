@@ -36,8 +36,11 @@ PRODUCT_MANUFACTURER := Google
 
 endif
 
+#Root
+export DEFAULT_ROOT_METHOD := supersu
+
 #Inline kernel
-TARGET_KERNEL_CONFIG := pixel_defconfig
+TARGET_KERNEL_CONFIG := fuckery_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/pixel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
