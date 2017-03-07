@@ -13,7 +13,7 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-    masquerade
+    ThemeInterfacer
 
 PRODUCT_PACKAGES += \
     Stk
