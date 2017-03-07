@@ -37,8 +37,8 @@ endif
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:7.1.1/NUF26K/3587663:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 7.1.1 NUF26K 3587663 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:7.1.1/NUF26N/3687344:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 7.1.1 NUF26N 3687344 release-keys"
 
 # Inline kernel building
 TARGET_GCC_VERSION_ARM64 := 6.x
