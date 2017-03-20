@@ -43,6 +43,9 @@ DIR_ROOT=$(pwd)
 DIR_OUT=$(readlink $DIR_ROOT/out)
 [ -z "$DIR_OUT" ] && DIR_OUT="$DIR_ROOT/out"
 
+# Set fallback branch
+export ROOMSERVICE_BRANCHES=n7x-caf
+
 # Make sure everything looks sane so far
 if [ ! -d "$DIR_ROOT/vendor/screwd" ]; then
         echo -e "${CLR_BLD_RED}error: insane root directory ($DIR_ROOT)${CLR_RST}"
