@@ -46,3 +46,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.screwd.device.short=$(SCREWD_DEVICE_SHORT) \
