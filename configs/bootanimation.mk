@@ -29,6 +29,10 @@ ifeq (screwd_marlin,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
 endif
+ifeq (screwd_sailfish,$(TARGET_PRODUCT))
+    PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
+endif
 ifeq (screwd_shamu,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
         vendor/screwd/prebuilt/bootanimation/shamu_bootanimation.zip:system/media/bootanimation.zip
