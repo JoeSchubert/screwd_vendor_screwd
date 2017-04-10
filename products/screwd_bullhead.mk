@@ -35,8 +35,8 @@ endif
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.1/N4F26T/3687331:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 7.1.1 N4F26T 3687331 release-keys"
+    BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.2/N2G47F/3769476:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 7.1.2 N2G47F 3769476 release-keys"
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
