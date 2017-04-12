@@ -25,8 +25,8 @@ ifeq (screwd_sailfish,$(TARGET_PRODUCT))
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
-# Inherit aosp_marlin
-$(call inherit-product, device/google/marlin/aosp_marlin.mk)
+# Inherit aosp_sailfish
+$(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 
 PRODUCT_NAME := screwd_sailfish
 PRODUCT_DEVICE := sailfish
@@ -42,7 +42,7 @@ TARGET_KERNEL_SOURCE := kernel/google/pixel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_GCC_VERSION_ARM64 := 6.3.1
+TARGET_GCC_VERSION_ARM64 := 6.3
 TARGET_USES_UNCOMPRESSED_KERNEL := false
 
 # Device Fingerprint
