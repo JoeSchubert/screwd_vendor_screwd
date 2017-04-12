@@ -41,7 +41,7 @@ endif
 # Inline kernel building
 TARGET_GCC_VERSION_ARM64 := 4.9
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8996
-TARGET_KERNEL_CONFIG := lineageos_oneplus3_defconfig
+TARGET_KERNEL_CONFIG := screwd_oneplus3_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Enable real time lockscreen charging current values
