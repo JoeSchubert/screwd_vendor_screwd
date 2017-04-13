@@ -49,3 +49,9 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.device.short=$(SCREWD_DEVICE_SHORT) \
+
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
