@@ -23,6 +23,9 @@ ifeq (screwd_oneplus3,$(TARGET_PRODUCT))
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
 
+# Include CAF required packages
+include vendor/screwd/caf_required.mk
+
 # Inherit AOSP device configuration for oneplus3
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
@@ -49,9 +52,3 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.device.short=$(SCREWD_DEVICE_SHORT) \
-
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
