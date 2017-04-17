@@ -24,7 +24,7 @@ ifeq (screwd_oneplus3,$(TARGET_PRODUCT))
 include vendor/screwd/main.mk
 
 # Include CAF required packages
-include vendor/screwd/caf_required.mk
+$(call inherit-product, vendor/screwd/configs/caf_required.mk)
 
 # Inherit AOSP device configuration for oneplus3
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
