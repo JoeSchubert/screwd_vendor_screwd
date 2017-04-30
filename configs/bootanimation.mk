@@ -1,5 +1,4 @@
-# Copyright (C) 2014 ParanoidAndroid Project
-# Copyright (C) 2015 Screw'd AOSP
+# Copyright (C) 2017 Screw'd AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,31 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (screwd_angler,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_bullhead,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/bullhead_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/hammerhead_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_marlin,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_sailfish,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/angler_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_shamu,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/shamu_bootanimation.zip:system/media/bootanimation.zip
-endif
-ifeq (screwd_flo,$(TARGET_PRODUCT))
-    PRODUCT_COPY_FILES += \
-        vendor/screwd/prebuilt/bootanimation/flo_bootanimation.zip:system/media/bootanimation.zip
-endif
+PRODUCT_COPY_FILES += \
+        vendor/screwd/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
