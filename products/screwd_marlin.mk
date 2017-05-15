@@ -37,12 +37,22 @@ PRODUCT_MANUFACTURER := Google
 endif
 
 #Inline kernel
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-6.3/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_CONFIG := fuckery_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/pixel
+ifeq (OFFICIAL,$(SCREWD_BUILD_TYPE))
+  TARGET_KERNEL_CONFIG := fuckery_defconfig
+  TARGET_KERNEL_SOURCE := kernel/google/pixel
+  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+  TARGET_KERNEL_ARCH := arm64
+  TARGET_KERNEL_HEADER_ARCH := arm64
+  TARGET_GCC_VERSION_ARM64 := 6.x
+  TARGET_USES_UNCOMPRESSED_KERNEL := false
+else
+  KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-6.3/bin
+  KERNEL_TOOLCHAIN_PREFIX := aarch64-
+  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+  TARGET_COMPILE_WITH_MSM_KERNEL := true
+  TARGET_KERNEL_CONFIG := fuckery_defconfig
+  TARGET_KERNEL_SOURCE := kernel/google/pixel
+endif
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
