@@ -91,4 +91,6 @@
     <string-array name="config_ephemeralResolverPackage">
         <item>com.google.android.gms</item>
     </string-array>
+
+   <bool name="config_allowAllRotations">true</bool>
 </resources>
