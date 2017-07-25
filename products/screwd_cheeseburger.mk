@@ -47,8 +47,6 @@ TARGET_VENDOR := oneplus
 
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
 TARGET_KERNEL_CONFIG := cheeseburger_defconfig
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_GCC_VERSION_ARM64 := 6.x
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 endif
