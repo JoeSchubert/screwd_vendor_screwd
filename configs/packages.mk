@@ -69,6 +69,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
+# Extra tools
+PRODUCT_PACKAGES += \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+
 ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager
 PRODUCT_PACKAGES += \
