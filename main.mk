@@ -18,4 +18,3 @@ include vendor/screwd/configs/packages.mk
 include vendor/screwd/configs/overrides.mk
 include vendor/screwd/configs/bootanimation.mk
 include vendor/screwd/configs/version.mk
-include vendor/screwd/configs/uber.mk

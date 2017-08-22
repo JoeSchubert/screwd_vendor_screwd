@@ -12,23 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PACKAGES += \
-    ThemeInterfacer
+#PRODUCT_PACKAGES += \
+#    ThemeInterfacer
 
 PRODUCT_PACKAGES += \
     Stk
 
 #LockClock
-PRODUCT_PACKAGES += \
-    LockClock
+#PRODUCT_PACKAGES += \
+#    LockClock
 
 #OmniSwitch
-PRODUCT_PACKAGES += \
-    OmniSwitch
-
-#OmniJAWS
 #PRODUCT_PACKAGES += \
-#    OmniJaws
+#    OmniSwitch
 
 #AOSP Messenger
 PRODUCT_PACKAGES += \
@@ -43,41 +39,41 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 #OmniStyle 
-PRODUCT_PACKAGES += \
-    OmniStyle
+#PRODUCT_PACKAGES += \
+#    OmniStyle
 
 #OmniJaws 
-PRODUCT_PACKAGES += \
-    OmniJaws
+#PRODUCT_PACKAGES += \
+#    OmniJaws
 
 #Lean
-PRODUCT_PACKAGES += \
-    Lean
+#PRODUCT_PACKAGES += \
+#    Lean
 
 # SnapDragon Browser
-PRODUCT_PACKAGES += \
-    SnapBrowser
+#PRODUCT_PACKAGES += \
+#    SnapBrowser
 
 # Turbo
-PRODUCT_PACKAGES += \
-    Turbo
+#PRODUCT_PACKAGES += \
+#    Turbo
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
+#PRODUCT_PACKAGES += \
+#    org.dirtyunicorns.utils
 
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
+#PRODUCT_BOOT_JARS += \
+#    org.dirtyunicorns.utils
 
 # Extra tools
-PRODUCT_PACKAGES += \
-    openvpn \
-    e2fsck \
-    mke2fs \
-    tune2fs \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat
+#PRODUCT_PACKAGES += \
+#    openvpn \
+#    e2fsck \
+#    mke2fs \
+#    tune2fs \
+#    mount.exfat \
+#    fsck.exfat \
+#    mkfs.exfat
 
 ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager
@@ -98,9 +94,9 @@ PRODUCT_COPY_FILES += \
 endif
 
 # For stereo widening effect
-ifneq ($(TARGET_NO_DSPMANAGER), true)
-    PRODUCT_PACKAGES += \
-        libcyanogen-dsp \
-        audio_effects.conf
-endif
+#ifneq ($(TARGET_NO_DSPMANAGER), true)
+#    PRODUCT_PACKAGES += \
+#        libcyanogen-dsp \
+#        audio_effects.conf
+#endif
     
