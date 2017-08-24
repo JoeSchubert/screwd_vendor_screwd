@@ -49,9 +49,9 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
-USING_CHOPPED64_KENREL = $(shell grep -rnw 'kernel/huawei/angler/arch/arm64/configs/angler_defconfig' -e "-Chopped64" -c)
+#USING_CHOPPED64_KENREL = $(shell grep -rnw 'kernel/huawei/angler/arch/arm64/configs/angler_defconfig' -e "-Chopped64" -c)
 
-ifeq ($(USING_CHOPPED64_KENREL),1)
-PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/etc/init.chopped64.rc:root/init.chopped64.rc
-endif
+#ifeq ($(USING_CHOPPED64_KENREL),1)
+#PRODUCT_COPY_FILES += \
+#    vendor/screwd/prebuilt/etc/init.chopped64.rc:root/init.chopped64.rc
+#endif
