@@ -70,16 +70,9 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat
+    tune2fs
 
 ifeq ($(DEFAULT_ROOT_METHOD),magisk)
-# Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
-
 # Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
