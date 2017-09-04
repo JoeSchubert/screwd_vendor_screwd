@@ -47,8 +47,8 @@ PRODUCT_PACKAGES += \
 #    OmniJaws
 
 #Lean
-#PRODUCT_PACKAGES += \
-#    Lean
+PRODUCT_PACKAGES += \
+    Lean
 
 # SnapDragon Browser
 #PRODUCT_PACKAGES += \
