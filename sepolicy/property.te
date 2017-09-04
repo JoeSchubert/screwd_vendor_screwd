@@ -1,3 +1,0 @@
-type recovery_prop, property_type;
-type userinit_prop, property_type;
-type adbtcp_prop, property_type;
