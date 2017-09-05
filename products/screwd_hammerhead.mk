@@ -40,7 +40,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_GCC_VERSION_ARM := 4.9
+TARGET_VARIANT_CONFIG := hammerhead_defconfig
+TARGET_SELINUX_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
