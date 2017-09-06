@@ -19,8 +19,8 @@
 
 
 # Check for target product
-
 ifeq (screwd_marlin,$(TARGET_PRODUCT))
+endif
 
 # Include Screw'd common configuration
 include vendor/screwd/main.mk
@@ -34,28 +34,8 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
 
-endif
-
-#Inline kernel
-ifeq (OFFICIAL,$(SCREWD_BUILD_TYPE))
-  TARGET_KERNEL_CONFIG := fuckery_defconfig
-  TARGET_KERNEL_SOURCE := kernel/google/pixel
-  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-  TARGET_KERNEL_ARCH := arm64
-  TARGET_KERNEL_HEADER_ARCH := arm64
-  TARGET_GCC_VERSION_ARM64 := 6.x
-  TARGET_USES_UNCOMPRESSED_KERNEL := false
-else
-  KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-6.3/bin
-  KERNEL_TOOLCHAIN_PREFIX := aarch64-
-  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-  TARGET_COMPILE_WITH_MSM_KERNEL := true
-  TARGET_KERNEL_CONFIG := fuckery_defconfig
-  TARGET_KERNEL_SOURCE := kernel/google/pixel
-endif
-
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:7.1.2/NZH54D/4146044:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 7.1.2 NZH54D 4146044 release-keys"
+    BUILD_FINGERPRINT=google/marlin/marlin:8.0.0/OPR6.170623.012/4283428:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 8.0.0 OPR6.170623.012 4283428 release-keys"
