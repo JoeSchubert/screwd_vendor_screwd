@@ -36,7 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    persist.sys.disable_rescue
 
 # Backup Services whitelist
 #PRODUCT_COPY_FILES += \
