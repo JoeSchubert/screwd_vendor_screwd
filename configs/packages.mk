@@ -43,8 +43,8 @@ PRODUCT_PACKAGES += \
 #    OmniStyle
 
 #OmniJaws 
-#PRODUCT_PACKAGES += \
-#    OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
 
 #Lean
 PRODUCT_PACKAGES += \
@@ -55,8 +55,8 @@ PRODUCT_PACKAGES += \
 #    SnapBrowser
 
 # Turbo
-#PRODUCT_PACKAGES += \
-#    Turbo
+PRODUCT_PACKAGES += \
+    Turbo
 
 # DU Utils Library
 #PRODUCT_PACKAGES += \
