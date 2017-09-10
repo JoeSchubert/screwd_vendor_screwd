@@ -21,7 +21,6 @@ export _JAVA_OPTIONS="-Xmx4g"
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
-    ro.control_privapp_permissions=enforce \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
@@ -38,6 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true \
     ro.build.selinux=1 \
     persist.sys.disable_rescue=true
+     # ro.control_privapp_permissions=enforce \
 
 # Backup Services whitelist
 #PRODUCT_COPY_FILES += \
