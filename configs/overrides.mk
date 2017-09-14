@@ -19,4 +19,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.device=$(SCREWD_DEVICE)
     
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=ChunkUpTheDeuce.ogg     
+    ro.config.ringtone=ChunkUpTheDeuce.ogg
+
+ifeq ($(SCREWD_BUILD_TYPE),DEV)
+WITH_DEXPREOPT := false
+endif
