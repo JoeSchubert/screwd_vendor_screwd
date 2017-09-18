@@ -37,7 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
     ro.build.selinux=1 \
-    persist.sys.disable_rescue
+    persist.sys.disable_rescue=true
 
 # Backup Services whitelist
 #PRODUCT_COPY_FILES += \
