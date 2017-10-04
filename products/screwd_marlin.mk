@@ -28,5 +28,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/marlin/marlin:8.0.0/OPR3.170623.008/4294783:user/release-keys \
     PRIVATE_BUILD_DESC="marlin-user 8.0.0 OPR3.170623.008 4294783 release-keys"
 
-$(call inherit-product-if-exists, vendor/google_devices/marlin/marlin-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor-blobs.mk)
 endif
