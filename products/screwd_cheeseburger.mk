@@ -27,9 +27,6 @@ include vendor/screwd/main.mk
 # Inherit from cheeseburger device
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
-# Include CAF required packages
-$(call inherit-product, vendor/screwd/configs/caf_required.mk)
-
 PRODUCT_NAME := screwd_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
