@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += \
 
 # backup script
  PRODUCT_COPY_FILES += \
-    vendor/screwd/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/screwd/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/screwd/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/screwd/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/screwd/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # HOSTS file
