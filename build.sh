@@ -160,3 +160,6 @@ TIME_END=$(date +%s.%N)
 # Log those times at the end as a fun fact of the day
 echo -e "${CLR_BLD_GRN}Total time elapsed:${CLR_RST} ${CLR_GRN}$(echo "($TIME_END - $TIME_START) / 60" | bc) minutes ($(echo "$TIME_END - $TIME_START" | bc) seconds)${CLR_RST}"
 echo -e ""
+
+#kill java if it's hanging on
+pkill java
