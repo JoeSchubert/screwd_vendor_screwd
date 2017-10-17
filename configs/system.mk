@@ -50,3 +50,9 @@ PRODUCT_COPY_FILES += \
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
+
+# Charging sounds
+PRODUCT_COPY_FILES += \
+    vendor/screwd/google/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
+    vendor/screwd/google/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
+
