@@ -35,15 +35,15 @@ endif
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.2/N2G48C/4104010:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 7.1.2 N2G48C 4104010 release-keys"
+    BUILD_FINGERPRINT=google/bullhead/bullhead:8.0.0/OPR4.170623.009/4302492:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 8.0.0 OPR4.170623.009 4302492 release-keys"
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 
 # Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 4.9
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/lge/bullhead
 TARGET_KERNEL_CONFIG := bullhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
