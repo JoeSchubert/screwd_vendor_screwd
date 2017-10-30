@@ -23,8 +23,8 @@ PRODUCT_PACKAGES += \
 #    LockClock
 
 #OmniSwitch
-#PRODUCT_PACKAGES += \
-#    OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
 
 #AOSP Messenger
 PRODUCT_PACKAGES += \
