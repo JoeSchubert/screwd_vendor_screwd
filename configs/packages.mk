@@ -39,8 +39,8 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 #OmniStyle 
-#PRODUCT_PACKAGES += \
-#    OmniStyle
+PRODUCT_PACKAGES += \
+    OmniStyle
 
 #OmniJaws 
 PRODUCT_PACKAGES += \
