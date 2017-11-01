@@ -97,4 +97,16 @@ endif
 PRODUCT_PACKAGES += \
     librsjni
 
+# Themes
+$(call inherit-product, vendor/screwd/Themes/Themes.mk)
+
+PRODUCT_PACKAGES += \
+    Blue \
+    Green \
+    Pixel \
+    Red \
+    Stock
+
+
+
     
