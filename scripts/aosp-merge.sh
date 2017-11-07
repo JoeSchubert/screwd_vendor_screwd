@@ -36,7 +36,7 @@ upstream=()
 failed=()
 
 # This is the array of repos to blacklist and not merge
-blacklist=('manifest' 'prebuilt' 'packages/apps/DeskClock' 'prebuilts/build-tools' 'hardware/qcom/msm8x74')
+blacklist=('manifest' 'prebuilt' 'packages/apps/DeskClock' 'prebuilts/build-tools' 'hardware/qcom/msm8x74' 'packages/apps/Gallery2')
 
 # Colors
 COLOR_RED='\033[0;31m'
