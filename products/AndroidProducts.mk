@@ -19,9 +19,6 @@ endif
 ifeq (screwd_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_bullhead.mk
 endif
-ifeq (screwd_flo,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_flo.mk
-endif
 ifeq (screwd_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_hammerhead.mk
 endif
@@ -30,9 +27,6 @@ ifeq (screwd_marlin,$(TARGET_PRODUCT))
 endif
 ifeq (screwd_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_shamu.mk
-endif
-ifeq (screwd_mako,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_mako.mk
 endif
 ifeq (screwd_cheeseburger,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_cheeseburger.mk
