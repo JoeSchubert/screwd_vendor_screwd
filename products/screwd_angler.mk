@@ -37,8 +37,8 @@ endif
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:8.0.0/OPR5.170623.007/4302479:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR5.170623.007 4302479 4299446 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:8.0.0/OPR5.170623.011/4397986:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR5.170623.011 4397986 release-keys"
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
