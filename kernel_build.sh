@@ -41,10 +41,10 @@ JVER=$(javac -version  2>&1 | head -n1 | cut -f2 -d' ')
 DEVICE="$1"
 
 # Get build version
-MAJOR=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MAJOR := *' | sed  's/ROM_VERSION_MAJOR := //g')
-MINOR=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MINOR := *' | sed  's/ROM_VERSION_MINOR := //g')
-MAINTENANCE=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_MAINTENANCE := *' | sed  's/ROM_VERSION_MAINTENANCE := //g')
-TAG=$(cat $DIR/vendor/screwd/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
+MAJOR=$(cat $DIR/vendor/screwd/configs/version.mk| grep 'ROM_VERSION_MAJOR := *' | sed  's/ROM_VERSION_MAJOR := //g')
+MINOR=$(cat $DIR/vendor/screwd/configs/version.mk | grep 'ROM_VERSION_MINOR := *' | sed  's/ROM_VERSION_MINOR := //g')
+MAINTENANCE=$(cat $DIR/vendor/screwd/configs/version.mk| grep 'ROM_VERSION_MAINTENANCE := *' | sed  's/ROM_VERSION_MAINTENANCE := //g')
+TAG=$(cat $DIR/vendor/screwd/configs/version.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
 
 if [ -n "$TAG" ]; then
         VERSION=$MAJOR.$MINOR$MAINTENANCE-$TAG

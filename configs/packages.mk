@@ -12,19 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#PRODUCT_PACKAGES += \
-#    ThemeInterfacer
-
 PRODUCT_PACKAGES += \
     Stk
-
-#LockClock
-#PRODUCT_PACKAGES += \
-#    LockClock
-
-#OmniSwitch
-#PRODUCT_PACKAGES += \
-#    OmniSwitch
 
 #AOSP Messenger
 PRODUCT_PACKAGES += \
@@ -49,10 +38,6 @@ PRODUCT_PACKAGES += \
 #Lean
 PRODUCT_PACKAGES += \
     Lean
-
-# SnapDragon Browser
-#PRODUCT_PACKAGES += \
-#    SnapBrowser
 
 # Turbo
 PRODUCT_PACKAGES += \
@@ -85,13 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/screwd/prebuilt/zip/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/screwd/prebuilt/etc/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon  
 endif
-
-# For stereo widening effect
-#ifneq ($(TARGET_NO_DSPMANAGER), true)
-#    PRODUCT_PACKAGES += \
-#        libcyanogen-dsp \
-#        audio_effects.conf
-#endif
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
