@@ -83,7 +83,13 @@ PRODUCT_PACKAGES += \
     Green \
     Pixel \
     Red \
-    Stock
+    Stock \
+    DeepPurpleTheme \
+    IndigoTheme \
+    PinkTheme \
+    SkyBlueTheme \
+    TealTheme \
+    YellowTheme
 
 
 
