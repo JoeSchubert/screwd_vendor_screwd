@@ -27,8 +27,6 @@ include vendor/screwd/main.mk
 # Inherit from cheeseburger device
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
-ALLOW_MISSING_DEPENDENCIES := true
-
 PRODUCT_NAME := screwd_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
@@ -45,11 +43,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 TARGET_VENDOR := oneplus
 
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
-TARGET_KERNEL_CONFIG := cheeseburger_defconfig
+TARGET_KERNEL_CONFIG := oneplus5_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=8.0.0/OPR6.170623.013/12140945:user/release-keys \
+    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:8.0.0/OPR6.170623.013/12140945:user/release-keys \
     PRIVATE_BUILD_DESC="OnePlus5-user 8.0.0 OPR6.170623.013 57 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
