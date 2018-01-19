@@ -21,6 +21,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=ChunkUpTheDeuce.ogg
 
-ifeq ($(SCREWD_BUILD_TYPE),DEV)
 WITH_DEXPREOPT := false
-endif
