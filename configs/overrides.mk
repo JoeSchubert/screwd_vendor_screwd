@@ -21,4 +21,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=ChunkUpTheDeuce.ogg
 
-WITH_DEXPREOPT := false
