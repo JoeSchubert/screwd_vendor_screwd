@@ -76,7 +76,30 @@ PRODUCT_PACKAGES += \
     librsjni
 
 # Themes
-$(call inherit-product, vendor/screwd/Themes/Themes.mk)
+# Accents
+PRODUCT_PACKAGES += \
+    PixelTheme \
+    AmberAccent \
+    BlackAccent \
+    BlueAccent \
+    BlueGreyAccent \
+    BrownAccent \
+    CyanAccent \
+    DeepOrangeAccent \
+    DeepPurpleAccent \
+    GreenAccent \
+    GreyAccent \
+    IndigoAccent \
+    LightBlueAccent \
+    LightGreenAccent \
+    LimeAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
+    TealAccent \
+    YellowAccent \
+    WhiteAccent
 
 # UI Variants
 PRODUCT_PACKAGES += \
@@ -86,19 +109,6 @@ PRODUCT_PACKAGES += \
     SystemBlackTheme \
     SettingsBlackTheme \
     DuiBlackTheme
-
-PRODUCT_PACKAGES += \
-    Blue \
-    Green \
-    Pixel \
-    Red \
-    Stock \
-    DeepPurpleTheme \
-    IndigoTheme \
-    PinkTheme \
-    SkyBlueTheme \
-    TealTheme \
-    YellowTheme
 
 # Fonts
 PRODUCT_PACKAGES += \
