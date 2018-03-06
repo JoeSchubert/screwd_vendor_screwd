@@ -44,7 +44,7 @@ COLOR_RED='\033[0;31m'
 COLOR_BLANK='\033[0m'
 
 function is_in_blacklist() {
-  if [[ $( grep -i "caf" $WORKING_DIR/manifest/README.md) ]]; then
+  if [[ $( grep -i "caf" $WORKING_DIR/manifest/manifests/screwd.xml) ]]; then
       for caf in ${caf_blacklist[@]}
       do
         if [ "$caf" == "$1" ]; then
