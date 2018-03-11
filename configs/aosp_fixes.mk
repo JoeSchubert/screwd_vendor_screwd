@@ -31,6 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
     ro.build.selinux=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
     persist.sys.disable_rescue=true
      # ro.control_privapp_permissions=enforce \
 
