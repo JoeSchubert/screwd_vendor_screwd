@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
     TealTheme \
     YellowTheme
 
+# Fonts
+PRODUCT_PACKAGES += \
+    DU-Fonts
+
 
 
     
