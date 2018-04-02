@@ -78,6 +78,15 @@ PRODUCT_PACKAGES += \
 # Themes
 $(call inherit-product, vendor/screwd/Themes/Themes.mk)
 
+# UI Variants
+PRODUCT_PACKAGES += \
+    SystemDarkTheme \
+    SettingsDarkTheme \
+    DuiDarkTheme \
+    SystemBlackTheme \
+    SettingsBlackTheme \
+    DuiBlackTheme
+
 PRODUCT_PACKAGES += \
     Blue \
     Green \
