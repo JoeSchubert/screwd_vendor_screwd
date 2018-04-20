@@ -31,10 +31,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    OmniStyle
 
-#OmniSwitch 
-PRODUCT_PACKAGES += \
-   OmniSwitch
-
 #OmniJaws 
 PRODUCT_PACKAGES += \
     OmniJaws
