@@ -48,8 +48,9 @@ TARGET_KERNEL_CONFIG := oneplus5_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:8.1.0/OPM1.171019.011/04110400:user/release-keys \
     PRIVATE_BUILD_DESC="OnePlus5-user 8.1.0 OPM1.171019.011 1 release-keys"
+
+BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:8.1.0/OPM1.171019.011/04110400:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.screwd.device.short=$(SCREWD_DEVICE_SHORT) \
