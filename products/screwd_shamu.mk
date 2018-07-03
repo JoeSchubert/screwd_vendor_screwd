@@ -20,26 +20,6 @@ ifeq (screwd_shamu,$(TARGET_PRODUCT))
 include vendor/screwd/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
-
-# Override AOSP build properties
-PRODUCT_NAME := screwd_shamu
-PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 6
-PRODUCT_MANUFACTURER := motorola
-
-# Device Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.1.1/NGI55D/4298276:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 8.0.0 OPR6.170623.017 4298423 release-keys"
+$(call inherit-product, device/moto/shamu/screwd.mk)
 
 endif
-
-# Kernel inline build
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
-TARGET_KERNEL_CONFIG := shamu_defconfig
-TARGET_GCC_VERSION_ARM := 4.9
-
-# Enable real time lockscreen charging current values
-BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
